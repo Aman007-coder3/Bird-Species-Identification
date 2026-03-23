@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+streamlit
+tensorflow==2.16.1
+Pillow
+=======
+streamlit
+tensorflow==2.16.1
+Pillow
+>>>>>>> 311f76c8 (Final project version with logo and weights)
+numpy

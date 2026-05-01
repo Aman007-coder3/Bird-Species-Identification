@@ -1,4 +1,8 @@
 streamlit
 tensorflow
-Pillow
+ultralytics
+pandas
 numpy
+opencv-python-headless
+Pillow
+wikipedia

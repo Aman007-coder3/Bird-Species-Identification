@@ -103,7 +103,7 @@ def load_classification_model():
     model_path = 'bird_model_V2_final.keras'
     
     # ⚠️ PASTE YOUR CORRECT GITHUB RELEASE LINK HERE:
-    MODEL_URL = "PASTE_YOUR_LINK_HERE"
+    MODEL_URL = "https://github.com/Aman007-coder3/Bird-Species-Identification/releases/download/v1.0/bird_model_V2_final.keras"
     
     # --- THE AGGRESSIVE CLEANUP ---
     # EfficientNet models are large. If the file is less than 20MB, it's a corrupted HTML page.

@@ -1,0 +1,2206 @@
+Model_Index,Bird_Species
+0,Abbotts Babbler
+1,Abbotts Booby
+2,Abyssinian Ground Hornbill
+3,Acadian Flycatcher
+4,Common Myna
+5,African Crowned Crane
+6,African Emerald Cuckoo
+7,African Firefinch
+8,African Oyster Catcher
+9,African Pied Hornbill
+10,African Pygmy Goose
+11,Alberts Towhee
+12,Common Kingfisher
+13,Alexandrine Parakeet
+14,Alpine Chough
+15,Altamira Yellowthroat
+16,American Avocet
+17,American Bittern
+18,American Coot
+19,American Crow
+20,American Dipper
+21,American Flamingo
+22,American Goldfinch
+23,American Kestrel
+24,American Pipit
+25,American Redstart
+26,American Robin
+27,American Three Toed Woodpecker
+28,American Wigeon
+29,Amethyst Woodstar
+30,Anas Platyrhynchos Mallard
+31,Andean Goose
+32,Andean Lapwing
+33,Andean Siskin
+34,Anhinga
+35,Anianiau
+36,Accipiter Badius
+37,Accipiter Cooperii
+38,Accipiter Gentilis
+39,Accipiter Nisus
+40,Accipiter Striatus
+41,Accipiter Trivirgatus
+42,Aegypius Monachus
+43,Aquila Audax
+44,Aquila Chrysaetos
+45,Aquila Heliaca
+46,Aquila Nipalensis
+47,Aquila Rapax
+48,Busarellus Nigricollis
+49,Buteo Albonotatus
+50,Buteo Brachyurus
+51,Buteo Buteo
+52,Buteo Jamaicensis
+53,Buteo Lagopus
+54,Buteo Lineatus
+55,Buteo Plagiatus
+56,Buteo Platypterus
+57,Buteo Regalis
+58,Buteo Rufinus
+59,Buteo Rufofuscus
+60,Buteo Swainsoni
+61,Buteogallus Anthracinus
+62,Buteogallus Meridionalis
+63,Buteogallus Urubitinga
+64,Chondrohierax Uncinatus
+65,Circaetus Cinereus
+66,Circaetus Gallicus
+67,Circus Aeruginosus
+68,Circus Approximans
+69,Circus Cyaneus
+70,Circus Hudsonius
+71,Circus Macrourus
+72,Circus Pygargus
+73,Clanga Clanga
+74,Elanoides Forficatus
+75,Elanus Axillaris
+76,Elanus Caeruleus
+77,Elanus Leucurus
+78,Geranoaetus Albicaudatus
+79,Geranoaetus Melanoleucus
+80,Geranoaetus Polyosoma
+81,Geranospiza Caerulescens
+82,Gypaetus Barbatus
+83,Gyps Africanus
+84,Gyps Fulvus
+85,Haliaeetus Albicilla
+86,Haliaeetus Leucocephalus
+87,Haliaeetus Leucogaster
+88,Haliaeetus Vocifer
+89,Haliastur Indus
+90,Haliastur Sphenurus
+91,Hieraaetus Pennatus
+92,Ictinia Mississippiensis
+93,Ictinia Plumbea
+94,Lophaetus Occipitalis
+95,Melierax Canorus
+96,Milvus Migrans
+97,Milvus Milvus
+98,Necrosyrtes Monachus
+99,Neophron Percnopterus
+100,Nisaetus Cirrhatus
+101,Parabuteo Unicinctus
+102,Pernis Apivorus
+103,Pernis Ptilorhynchus
+104,Polemaetus Bellicosus
+105,Polyboroides Typus
+106,Rostrhamus Sociabilis
+107,Rupornis Magnirostris
+108,Spilornis Cheela
+109,Terathopius Ecaudatus
+110,Pandion Haliaetus
+111,Sagittarius Serpentarius
+112,Aix Galericulata
+113,Aix Sponsa
+114,Alopochen Aegyptiaca
+115,Amazonetta Brasiliensis
+116,Anas Acuta
+117,Anas Bahamensis
+118,Anas Castanea
+119,Anas Crecca
+120,Anas Diazi
+121,Anas Erythrorhyncha
+122,Anas Flavirostris
+123,Anas Fulvigula
+124,Anas Georgica
+125,Anas Gracilis
+126,Anas Platyrhynchos
+127,Anas Poecilorhyncha
+128,Anas Rubripes
+129,Anas Superciliosa
+130,Anas Undulata
+131,Anas Zonorhyncha
+132,Anser Albifrons
+133,Anser Anser
+134,Anser Brachyrhynchus
+135,Anser Caerulescens
+136,Anser Cygnoides
+137,Anser Fabalis
+138,Anser Indicus
+139,Anser Rossii
+140,Aythya Affinis
+141,Aythya Americana
+142,Aythya Australis
+143,Aythya Collaris
+144,Aythya Ferina
+145,Aythya Fuligula
+146,Aythya Marila
+147,Aythya Novaeseelandiae
+148,Aythya Nyroca
+149,Aythya Valisineria
+150,Branta Bernicla
+151,Branta Canadensis
+152,Branta Hutchinsii
+153,Branta Leucopsis
+154,Branta Sandvicensis
+155,Bucephala Albeola
+156,Bucephala Clangula
+157,Bucephala Islandica
+158,Cairina Moschata
+159,Cereopsis Novaehollandiae
+160,Chenonetta Jubata
+161,Chloephaga Picta
+162,Clangula Hyemalis
+163,Coscoroba Coscoroba
+164,Cygnus Atratus
+165,Cygnus Buccinator
+166,Cygnus Columbianus
+167,Cygnus Cygnus
+168,Cygnus Melancoryphus
+169,Cygnus Olor
+170,Dendrocygna Autumnalis
+171,Dendrocygna Bicolor
+172,Dendrocygna Javanica
+173,Dendrocygna Viduata
+174,Histrionicus Histrionicus
+175,Lophodytes Cucullatus
+176,Lophonetta Specularioides
+177,Malacorhynchus Membranaceus
+178,Mareca Americana
+179,Mareca Penelope
+180,Mareca Strepera
+181,Melanitta Americana
+182,Melanitta Deglandi
+183,Melanitta Perspicillata
+184,Mergellus Albellus
+185,Mergus Merganser
+186,Mergus Serrator
+187,Netta Peposaca
+188,Netta Rufina
+189,Oxyura Jamaicensis
+190,Plectropterus Gambensis
+191,Sarkidiornis Melanotos
+192,Somateria Mollissima
+193,Spatula Clypeata
+194,Spatula Cyanoptera
+195,Spatula Discors
+196,Spatula Querquedula
+197,Spatula Rhynchotis
+198,Tadorna Ferruginea
+199,Tadorna Tadorna
+200,Tadorna Tadornoides
+201,Tadorna Variegata
+202,Chauna Torquata
+203,Anseranas Semipalmata
+204,Anthracoceros Albirostris
+205,Lophoceros Alboterminatus
+206,Lophoceros Nasutus
+207,Tockus Leucomelas
+208,Bucorvus Leadbeateri
+209,Phoeniculus Purpureus
+210,Upupa Epops
+211,Aeronautes Saxatalis
+212,Apus Apus
+213,Chaetura Pelagica
+214,Chaetura Vauxi
+215,Caprimulgus Europaeus
+216,Chordeiles Acutipennis
+217,Chordeiles Minor
+218,Nyctidromus Albicollis
+219,Phalaenoptilus Nuttallii
+220,Nyctibius Griseus
+221,Nyctibius Jamaicensis
+222,Podargus Strigoides
+223,Amazilia Beryllina
+224,Amazilia Cyanocephala
+225,Amazilia Rutila
+226,Amazilia Tzacatl
+227,Amazilia Violiceps
+228,Amazilia Yucatanensis
+229,Anthracothorax Nigricollis
+230,Anthracothorax Prevostii
+231,Archilochus Alexandri
+232,Archilochus Colubris
+233,Boissonneaua Flavescens
+234,Calothorax Lucifer
+235,Calypte Anna
+236,Calypte Costae
+237,Campylopterus Hemileucurus
+238,Chlorostilbon Canivetii
+239,Chlorostilbon Lucidus
+240,Colibri Coruscans
+241,Colibri Cyanotus
+242,Cynanthus Latirostris
+243,Eugenes Fulgens
+244,Eupetomena Macroura
+245,Florisuga Mellivora
+246,Heliodoxa Jacula
+247,Hylocharis Leucotis
+248,Lampornis Clemenciae
+249,Ocreatus Underwoodii
+250,Selasphorus Calliope
+251,Selasphorus Platycercus
+252,Selasphorus Rufus
+253,Selasphorus Sasin
+254,Thalurania Colombica
+255,Dromaius Novaehollandiae
+256,Cathartes Aura
+257,Cathartes Burrovianus
+258,Coragyps Atratus
+259,Gymnogyps Californianus
+260,Sarcoramphus Papa
+261,Vultur Gryphus
+262,Alca Torda
+263,Brachyramphus Marmoratus
+264,Cepphus Columba
+265,Cepphus Grylle
+266,Cerorhinca Monocerata
+267,Fratercula Arctica
+268,Uria Aalge
+269,Burhinus Bistriatus
+270,Burhinus Capensis
+271,Burhinus Grallarius
+272,Burhinus Vermiculatus
+273,Charadrius Alexandrinus
+274,Charadrius Bicinctus
+275,Charadrius Collaris
+276,Charadrius Dubius
+277,Charadrius Hiaticula
+278,Charadrius Leschenaultii
+279,Charadrius Marginatus
+280,Charadrius Melodus
+281,Charadrius Mongolus
+282,Charadrius Nivosus
+283,Charadrius Obscurus
+284,Charadrius Pecuarius
+285,Charadrius Ruficapillus
+286,Charadrius Semipalmatus
+287,Charadrius Tricollaris
+288,Charadrius Vociferus
+289,Charadrius Wilsonia
+290,Elseyornis Melanops
+291,Pluvialis Apricaria
+292,Pluvialis Dominica
+293,Pluvialis Fulva
+294,Pluvialis Squatarola
+295,Vanellus Armatus
+296,Vanellus Chilensis
+297,Vanellus Coronatus
+298,Vanellus Indicus
+299,Vanellus Miles
+300,Vanellus Senegallus
+301,Vanellus Spinosus
+302,Vanellus Vanellus
+303,Glareola Pratincola
+304,Haematopus Bachmani
+305,Haematopus Finschi
+306,Haematopus Fuliginosus
+307,Haematopus Longirostris
+308,Haematopus Moquini
+309,Haematopus Ostralegus
+310,Haematopus Palliatus
+311,Haematopus Unicolor
+312,Actophilornis Africanus
+313,Hydrophasianus Chirurgus
+314,Irediparra Gallinacea
+315,Jacana Jacana
+316,Jacana Spinosa
+317,Chlidonias Hybrida
+318,Chlidonias Leucopterus
+319,Chlidonias Niger
+320,Chroicocephalus Bulleri
+321,Chroicocephalus Cirrocephalus
+322,Chroicocephalus Genei
+323,Chroicocephalus Hartlaubii
+324,Chroicocephalus Maculipennis
+325,Chroicocephalus Novaehollandiae
+326,Chroicocephalus Philadelphia
+327,Chroicocephalus Ridibundus
+328,Chroicocephalus Serranus
+329,Gelochelidon Nilotica
+330,Hydrocoloeus Minutus
+331,Hydroprogne Caspia
+332,Ichthyaetus Ichthyaetus
+333,Ichthyaetus Melanocephalus
+334,Larus Argentatus
+335,Larus Cachinnans
+336,Larus Californicus
+337,Larus Canus
+338,Larus Crassirostris
+339,Larus Delawarensis
+340,Larus Dominicanus
+341,Larus Fuscus
+342,Larus Glaucescens
+343,Larus Glaucoides
+344,Larus Heermanni
+345,Larus Hyperboreus
+346,Larus Livens
+347,Larus Marinus
+348,Larus Michahellis
+349,Larus Occidentalis
+350,Larus Pacificus
+351,Leucophaeus Atricilla
+352,Leucophaeus Pipixcan
+353,Phaetusa Simplex
+354,Rissa Tridactyla
+355,Rynchops Niger
+356,Sterna Forsteri
+357,Sterna Hirundo
+358,Sterna Paradisaea
+359,Sterna Striata
+360,Sternula Albifrons
+361,Sternula Antillarum
+362,Thalasseus Bergii
+363,Thalasseus Elegans
+364,Thalasseus Maximus
+365,Thalasseus Sandvicensis
+366,Himantopus Himantopus
+367,Himantopus Leucocephalus
+368,Himantopus Mexicanus
+369,Recurvirostra Americana
+370,Recurvirostra Avosetta
+371,Rostratula Benghalensis
+372,Actitis Hypoleucos
+373,Actitis Macularius
+374,Arenaria Interpres
+375,Arenaria Melanocephala
+376,Bartramia Longicauda
+377,Calidris Acuminata
+378,Calidris Alba
+379,Calidris Alpina
+380,Calidris Bairdii
+381,Calidris Canutus
+382,Calidris Ferruginea
+383,Calidris Fuscicollis
+384,Calidris Himantopus
+385,Calidris Maritima
+386,Calidris Mauri
+387,Calidris Melanotos
+388,Calidris Minuta
+389,Calidris Minutilla
+390,Calidris Pugnax
+391,Calidris Pusilla
+392,Calidris Ruficollis
+393,Calidris Subruficollis
+394,Calidris Temminckii
+395,Calidris Virgata
+396,Gallinago Delicata
+397,Gallinago Gallinago
+398,Limnodromus Griseus
+399,Limnodromus Scolopaceus
+400,Limosa Fedoa
+401,Limosa Haemastica
+402,Limosa Lapponica
+403,Limosa Limosa
+404,Numenius Americanus
+405,Numenius Arquata
+406,Numenius Madagascariensis
+407,Numenius Phaeopus
+408,Phalaropus Fulicarius
+409,Phalaropus Lobatus
+410,Phalaropus Tricolor
+411,Scolopax Minor
+412,Tringa Brevipes
+413,Tringa Erythropus
+414,Tringa Flavipes
+415,Tringa Glareola
+416,Tringa Incana
+417,Tringa Melanoleuca
+418,Tringa Nebularia
+419,Tringa Ochropus
+420,Tringa Semipalmata
+421,Tringa Solitaria
+422,Tringa Stagnatilis
+423,Tringa Totanus
+424,Xenus Cinereus
+425,Stercorarius Parasiticus
+426,Anastomus Oscitans
+427,Ciconia Ciconia
+428,Ciconia Episcopus
+429,Ciconia Maguari
+430,Ciconia Nigra
+431,Jabiru Mycteria
+432,Leptoptilos Crumenifer
+433,Mycteria Americana
+434,Mycteria Ibis
+435,Mycteria Leucocephala
+436,Colius Striatus
+437,Chalcophaps Indica
+438,Columba Guinea
+439,Columba Livia
+440,Columba Oenas
+441,Columba Palumbus
+442,Columbina Inca
+443,Columbina Passerina
+444,Columbina Picui
+445,Columbina Talpacoti
+446,Geopelia Humeralis
+447,Geopelia Placida
+448,Geopelia Striata
+449,Hemiphaga Novaeseelandiae
+450,Leptotila Verreauxi
+451,Ocyphaps Lophotes
+452,Patagioenas Cayennensis
+453,Patagioenas Fasciata
+454,Patagioenas Flavirostris
+455,Patagioenas Leucocephala
+456,Patagioenas Maculosa
+457,Patagioenas Picazuro
+458,Phaps Chalcoptera
+459,Streptopelia Capicola
+460,Streptopelia Chinensis
+461,Streptopelia Decaocto
+462,Streptopelia Orientalis
+463,Streptopelia Semitorquata
+464,Streptopelia Senegalensis
+465,Streptopelia Tranquebarica
+466,Streptopelia Turtur
+467,Treron Calvus
+468,Treron Vernans
+469,Zenaida Asiatica
+470,Zenaida Auriculata
+471,Zenaida Aurita
+472,Zenaida Macroura
+473,Alcedo Atthis
+474,Ceryle Rudis
+475,Chloroceryle Amazona
+476,Chloroceryle Americana
+477,Corythornis Cristatus
+478,Dacelo Novaeguineae
+479,Halcyon Albiventris
+480,Halcyon Senegalensis
+481,Halcyon Smyrnensis
+482,Megaceryle Alcyon
+483,Megaceryle Maxima
+484,Megaceryle Torquata
+485,Pelargopsis Capensis
+486,Todiramphus Chloris
+487,Todiramphus Macleayii
+488,Todiramphus Sanctus
+489,Coracias Benghalensis
+490,Coracias Caudatus
+491,Coracias Garrulus
+492,Eurystomus Orientalis
+493,Merops Apiaster
+494,Merops Bullockoides
+495,Merops Orientalis
+496,Merops Ornatus
+497,Merops Persicus
+498,Merops Philippinus
+499,Merops Pusillus
+500,Eumomota Superciliosa
+501,Momotus Aequatorialis
+502,Momotus Lessonii
+503,Momotus Mexicanus
+504,Cacomantis Flabelliformis
+505,Centropus Sinensis
+506,Centropus Superciliosus
+507,Coccyzus Americanus
+508,Coccyzus Erythropthalmus
+509,Crotophaga Ani
+510,Crotophaga Major
+511,Crotophaga Sulcirostris
+512,Cuculus Canorus
+513,Eudynamys Scolopaceus
+514,Geococcyx Californianus
+515,Guira Guira
+516,Piaya Cayana
+517,Caracara Cheriway
+518,Caracara Plancus
+519,Falco Berigora
+520,Falco Cenchroides
+521,Falco Columbarius
+522,Falco Femoralis
+523,Falco Mexicanus
+524,Falco Naumanni
+525,Falco Novaeseelandiae
+526,Falco Peregrinus
+527,Falco Rufigularis
+528,Falco Rupicolus
+529,Falco Sparverius
+530,Falco Subbuteo
+531,Falco Tinnunculus
+532,Falco Vespertinus
+533,Herpetotheres Cachinnans
+534,Milvago Chimachima
+535,Milvago Chimango
+536,Galbula Ruficauda
+537,Crax Rubra
+538,Ortalis Cinereiceps
+539,Ortalis Poliocephala
+540,Ortalis Vetula
+541,Ortalis Wagleri
+542,Penelope Obscura
+543,Penelope Purpurascens
+544,Alectura Lathami
+545,Numida Meleagris
+546,Callipepla Californica
+547,Callipepla Gambelii
+548,Callipepla Squamata
+549,Colinus Virginianus
+550,Alectoris Chukar
+551,Alectoris Rufa
+552,Bonasa Umbellus
+553,Dendragapus Fuliginosus
+554,Dendragapus Obscurus
+555,Falcipennis Canadensis
+556,Francolinus Pondicerianus
+557,Gallus Gallus
+558,Lagopus Lagopus
+559,Meleagris Gallopavo
+560,Pavo Cristatus
+561,Perdix Perdix
+562,Phasianus Colchicus
+563,Pternistis Capensis
+564,Tetrao Tetrix
+565,Tetrastes Bonasia
+566,Gavia Arctica
+567,Gavia Immer
+568,Gavia Pacifica
+569,Gavia Stellata
+570,Aramus Guarauna
+571,Anthropoides Paradiseus
+572,Anthropoides Virgo
+573,Antigone Canadensis
+574,Antigone Rubicunda
+575,Grus Americana
+576,Grus Grus
+577,Amaurornis Phoenicurus
+578,Aramides Albiventris
+579,Aramides Cajaneus
+580,Fulica Americana
+581,Fulica Ardesiaca
+582,Fulica Armillata
+583,Fulica Atra
+584,Fulica Cristata
+585,Gallinula Chloropus
+586,Gallinula Galeata
+587,Gallinula Tenebrosa
+588,Gallirallus Australis
+589,Gallirallus Philippensis
+590,Porphyrio Martinica
+591,Porphyrio Melanotus
+592,Porphyrio Poliocephalus
+593,Porzana Carolina
+594,Rallus Aquaticus
+595,Rallus Crepitans
+596,Rallus Limicola
+597,Rallus Obsoletus
+598,Zapornia Flavirostra
+599,Corythaixoides Concolor
+600,Opisthocomus Hoazin
+601,Ardeotis Kori
+602,Acanthisitta Chloris
+603,Acanthiza Chrysorrhoa
+604,Acanthiza Pusilla
+605,Gerygone Igata
+606,Sericornis Frontalis
+607,Acrocephalus Arundinaceus
+608,Acrocephalus Australis
+609,Acrocephalus Dumetorum
+610,Acrocephalus Schoenobaenus
+611,Acrocephalus Scirpaceus
+612,Iduna Caligata
+613,Aegithalos Caudatus
+614,Psaltriparus Minimus
+615,Aegithina Tiphia
+616,Alauda Arvensis
+617,Eremophila Alpestris
+618,Galerida Cristata
+619,Lullula Arborea
+620,Artamus Cyanopterus
+621,Artamus Leucorynchus
+622,Cracticus Nigrogularis
+623,Cracticus Torquatus
+624,Gymnorhina Tibicen
+625,Strepera Graculina
+626,Bombycilla Cedrorum
+627,Bombycilla Garrulus
+628,Buphagus Erythrorynchus
+629,Calcarius Lapponicus
+630,Plectrophenax Nivalis
+631,Philesturnus Rufusater
+632,Coracina Novaehollandiae
+633,Pericrocotus Speciosus
+634,Cardinalis Cardinalis
+635,Cardinalis Sinuatus
+636,Cyanocompsa Parellina
+637,Habia Fuscicauda
+638,Passerina Amoena
+639,Passerina Caerulea
+640,Passerina Ciris
+641,Passerina Cyanea
+642,Passerina Leclancherii
+643,Passerina Versicolor
+644,Pheucticus Chrysopeplus
+645,Pheucticus Ludovicianus
+646,Pheucticus Melanocephalus
+647,Piranga Bidentata
+648,Piranga Flava
+649,Piranga Ludoviciana
+650,Piranga Olivacea
+651,Piranga Rubra
+652,Spiza Americana
+653,Certhia Americana
+654,Certhia Brachydactyla
+655,Certhia Familiaris
+656,Cinclus Cinclus
+657,Cinclus Mexicanus
+658,Cisticola Exilis
+659,Cisticola Juncidis
+660,Orthotomus Sutorius
+661,Prinia Inornata
+662,Prinia Maculosa
+663,Prinia Subflava
+664,Cormobates Leucophaea
+665,Corcorax Melanorhamphos
+666,Aphelocoma Californica
+667,Aphelocoma Coerulescens
+668,Aphelocoma Wollweberi
+669,Aphelocoma Woodhouseii
+670,Calocitta Colliei
+671,Calocitta Formosa
+672,Corvus Albicollis
+673,Corvus Albus
+674,Corvus Brachyrhynchos
+675,Corvus Caurinus
+676,Corvus Corax
+677,Corvus Cornix
+678,Corvus Corone
+679,Corvus Coronoides
+680,Corvus Frugilegus
+681,Corvus Macrorhynchos
+682,Corvus Mellori
+683,Corvus Monedula
+684,Corvus Ossifragus
+685,Corvus Splendens
+686,Cyanocitta Cristata
+687,Cyanocitta Stelleri
+688,Cyanocorax Chrysops
+689,Cyanocorax Yncas
+690,Cyanocorax Yucatanicus
+691,Cyanopica Cyanus
+692,Dendrocitta Formosae
+693,Dendrocitta Vagabunda
+694,Garrulus Glandarius
+695,Nucifraga Caryocatactes
+696,Nucifraga Columbiana
+697,Perisoreus Canadensis
+698,Pica Hudsonia
+699,Pica Nuttalli
+700,Pica Pica
+701,Pica Serica
+702,Psilorhinus Morio
+703,Pyrrhocorax Graculus
+704,Pyrrhocorax Pyrrhocorax
+705,Urocissa Erythroryncha
+706,Dicaeum Hirundinaceum
+707,Dicrurus Adsimilis
+708,Dicrurus Bracteatus
+709,Dicrurus Leucophaeus
+710,Dicrurus Macrocercus
+711,Dicrurus Paradiseus
+712,Emberiza Calandra
+713,Emberiza Cia
+714,Emberiza Cirlus
+715,Emberiza Citrinella
+716,Emberiza Elegans
+717,Emberiza Hortulana
+718,Emberiza Rustica
+719,Emberiza Schoeniclus
+720,Emberiza Spodocephala
+721,Estrilda Astrild
+722,Euodice Malabarica
+723,Lagonosticta Senegala
+724,Lonchura Atricapilla
+725,Lonchura Punctulata
+726,Lonchura Striata
+727,Neochmia Temporalis
+728,Spermestes Cucullata
+729,Taeniopygia Bichenovii
+730,Uraeginthus Angolensis
+731,Acanthis Cabaret
+732,Acanthis Flammea
+733,Acanthis Hornemanni
+734,Carduelis Carduelis
+735,Carpodacus Erythrinus
+736,Carpodacus Sibiricus
+737,Chloris Chloris
+738,Chloris Sinica
+739,Coccothraustes Coccothraustes
+740,Coccothraustes Vespertinus
+741,Crithagra Mozambica
+742,Euphonia Affinis
+743,Euphonia Elegantissima
+744,Euphonia Hirundinacea
+745,Euphonia Laniirostris
+746,Fringilla Coelebs
+747,Fringilla Montifringilla
+748,Haemorhous Cassinii
+749,Haemorhous Mexicanus
+750,Haemorhous Purpureus
+751,Leucosticte Tephrocotis
+752,Linaria Cannabina
+753,Loxia Curvirostra
+754,Loxia Leucoptera
+755,Pinicola Enucleator
+756,Pyrrhula Pyrrhula
+757,Serinus Serinus
+758,Spinus Lawrencei
+759,Spinus Magellanicus
+760,Spinus Pinus
+761,Spinus Psaltria
+762,Spinus Spinus
+763,Spinus Tristis
+764,Certhiaxis Cinnamomeus
+765,Furnarius Leucopus
+766,Furnarius Rufus
+767,Lepidocolaptes Angustirostris
+768,Xiphorhynchus Flavigaster
+769,Cecropis Abyssinica
+770,Cecropis Daurica
+771,Delichon Urbicum
+772,Hirundo Albigularis
+773,Hirundo Neoxena
+774,Hirundo Rustica
+775,Hirundo Smithii
+776,Hirundo Tahitica
+777,Petrochelidon Fulva
+778,Petrochelidon Pyrrhonota
+779,Progne Chalybea
+780,Progne Subis
+781,Progne Tapera
+782,Ptyonoprogne Rupestris
+783,Pygochelidon Cyanoleuca
+784,Riparia Riparia
+785,Stelgidopteryx Ruficollis
+786,Stelgidopteryx Serripennis
+787,Tachycineta Albilinea
+788,Tachycineta Albiventer
+789,Tachycineta Bicolor
+790,Tachycineta Thalassina
+791,Agelaioides Badius
+792,Agelaius Phoeniceus
+793,Agelaius Tricolor
+794,Cacicus Cela
+795,Cassiculus Melanicterus
+796,Chrysomus Icterocephalus
+797,Dives Dives
+798,Dolichonyx Oryzivorus
+799,Euphagus Carolinus
+800,Euphagus Cyanocephalus
+801,Icterus Abeillei
+802,Icterus Bullockii
+803,Icterus Chrysater
+804,Icterus Cucullatus
+805,Icterus Galbula
+806,Icterus Graduacauda
+807,Icterus Gularis
+808,Icterus Nigrogularis
+809,Icterus Parisorum
+810,Icterus Pectoralis
+811,Icterus Prosthemelas
+812,Icterus Pustulatus
+813,Icterus Pyrrhopterus
+814,Icterus Spurius
+815,Icterus Wagleri
+816,Leistes Loyca
+817,Molothrus Aeneus
+818,Molothrus Ater
+819,Molothrus Bonariensis
+820,Psarocolius Decumanus
+821,Psarocolius Montezuma
+822,Quiscalus Lugubris
+823,Quiscalus Major
+824,Quiscalus Mexicanus
+825,Quiscalus Niger
+826,Quiscalus Quiscula
+827,Sturnella Magna
+828,Sturnella Neglecta
+829,Xanthocephalus Xanthocephalus
+830,Icteria Virens
+831,Lanius Borealis
+832,Lanius Collaris
+833,Lanius Collurio
+834,Lanius Cristatus
+835,Lanius Excubitor
+836,Lanius Ludovicianus
+837,Lanius Minor
+838,Lanius Schach
+839,Lanius Senator
+840,Garrulax Perspicillatus
+841,Turdoides Striata
+842,Dryoscopus Cubla
+843,Laniarius Ferrugineus
+844,Telophorus Zeylonus
+845,Malurus Cyaneus
+846,Malurus Melanocephalus
+847,Malurus Splendens
+848,Acanthorhynchus Tenuirostris
+849,Anthochaera Carunculata
+850,Anthochaera Chrysoptera
+851,Anthornis Melanura
+852,Caligavis Chrysops
+853,Entomyzon Cyanotis
+854,Gavicalis Virescens
+855,Lichmera Indistincta
+856,Manorina Melanocephala
+857,Meliphaga Lewinii
+858,Myzomela Sanguinolenta
+859,Philemon Corniculatus
+860,Phylidonyris Niger
+861,Phylidonyris Novaehollandiae
+862,Prosthemadera Novaeseelandiae
+863,Ptilotula Penicillata
+864,Menura Novaehollandiae
+865,Dumetella Carolinensis
+866,Melanotis Caerulescens
+867,Mimus Gilvus
+868,Mimus Longicaudatus
+869,Mimus Polyglottos
+870,Mimus Saturninus
+871,Oreoscoptes Montanus
+872,Toxostoma Curvirostre
+873,Toxostoma Longirostre
+874,Toxostoma Redivivum
+875,Toxostoma Rufum
+876,Grallina Cyanoleuca
+877,Hypothymis Azurea
+878,Terpsiphone Paradisi
+879,Terpsiphone Viridis
+880,Anthus Campestris
+881,Anthus Cervinus
+882,Anthus Cinnamomeus
+883,Anthus Hodgsoni
+884,Anthus Novaeseelandiae
+885,Anthus Petrosus
+886,Anthus Pratensis
+887,Anthus Rubescens
+888,Anthus Rufulus
+889,Anthus Spinoletta
+890,Anthus Trivialis
+891,Macronyx Croceus
+892,Motacilla Aguimp
+893,Motacilla Alba
+894,Motacilla Capensis
+895,Motacilla Cinerea
+896,Motacilla Citreola
+897,Motacilla Flava
+898,Motacilla Tschutschensis
+899,Copsychus Fulicatus
+900,Copsychus Malabaricus
+901,Copsychus Saularis
+902,Cossypha Caffra
+903,Erithacus Rubecula
+904,Eumyias Thalassinus
+905,Ficedula Hypoleuca
+906,Luscinia Luscinia
+907,Luscinia Megarhynchos
+908,Luscinia Svecica
+909,Melaenornis Silens
+910,Monticola Solitarius
+911,Muscicapa Adusta
+912,Muscicapa Dauurica
+913,Muscicapa Striata
+914,Myophonus Caeruleus
+915,Oenanthe Familiaris
+916,Oenanthe Oenanthe
+917,Phoenicurus Auroreus
+918,Phoenicurus Fuliginosus
+919,Phoenicurus Ochruros
+920,Phoenicurus Phoenicurus
+921,Saxicola Caprata
+922,Saxicola Maurus
+923,Saxicola Rubetra
+924,Saxicola Rubicola
+925,Saxicola Torquatus
+926,Tarsiger Cyanurus
+927,Aethopyga Siparaja
+928,Anthobaphes Violacea
+929,Anthreptes Malacensis
+930,Chalcomitra Amethystina
+931,Chalcomitra Senegalensis
+932,Cinnyris Afer
+933,Cinnyris Asiaticus
+934,Cinnyris Chalybeus
+935,Cinnyris Jugularis
+936,Hedydipna Collaris
+937,Leptocoma Zeylonica
+938,Nectarinia Famosa
+939,Oriolus Chinensis
+940,Oriolus Larvatus
+941,Oriolus Oriolus
+942,Oriolus Sagittatus
+943,Oriolus Xanthornus
+944,Sphecotheres Vieilloti
+945,Colluricincla Harmonica
+946,Pachycephala Pectoralis
+947,Pachycephala Rufiventris
+948,Panurus Biarmicus
+949,Pardalotus Punctatus
+950,Pardalotus Striatus
+951,Baeolophus Atricristatus
+952,Baeolophus Bicolor
+953,Baeolophus Inornatus
+954,Baeolophus Ridgwayi
+955,Baeolophus Wollweberi
+956,Cyanistes Caeruleus
+957,Cyanistes Cyanus
+958,Lophophanes Cristatus
+959,Parus Major
+960,Parus Minor
+961,Periparus Ater
+962,Poecile Atricapillus
+963,Poecile Carolinensis
+964,Poecile Gambeli
+965,Poecile Hudsonicus
+966,Poecile Montanus
+967,Poecile Palustris
+968,Poecile Rufescens
+969,Basileuterus Culicivorus
+970,Basileuterus Rufifrons
+971,Cardellina Canadensis
+972,Cardellina Pusilla
+973,Geothlypis Formosa
+974,Geothlypis Philadelphia
+975,Geothlypis Tolmiei
+976,Geothlypis Trichas
+977,Helmitheros Vermivorum
+978,Leiothlypis Celata
+979,Leiothlypis Luciae
+980,Leiothlypis Peregrina
+981,Leiothlypis Ruficapilla
+982,Mniotilta Varia
+983,Myioborus Miniatus
+984,Myioborus Pictus
+985,Oreothlypis Superciliosa
+986,Parkesia Motacilla
+987,Parkesia Noveboracensis
+988,Protonotaria Citrea
+989,Seiurus Aurocapilla
+990,Setophaga Americana
+991,Setophaga Caerulescens
+992,Setophaga Castanea
+993,Setophaga Cerulea
+994,Setophaga Chrysoparia
+995,Setophaga Citrina
+996,Setophaga Coronata
+997,Setophaga Discolor
+998,Setophaga Dominica
+999,Setophaga Fusca
+1000,Setophaga Graciae
+1001,Setophaga Magnolia
+1002,Setophaga Nigrescens
+1003,Setophaga Occidentalis
+1004,Setophaga Palmarum
+1005,Setophaga Pensylvanica
+1006,Setophaga Petechia
+1007,Setophaga Pinus
+1008,Setophaga Pitiayumi
+1009,Setophaga Ruticilla
+1010,Setophaga Striata
+1011,Setophaga Tigrina
+1012,Setophaga Townsendi
+1013,Setophaga Virens
+1014,Vermivora Chrysoptera
+1015,Vermivora Cyanoptera
+1016,Aimophila Ruficeps
+1017,Ammodramus Savannarum
+1018,Ammospiza Leconteii
+1019,Ammospiza Nelsoni
+1020,Amphispiza Bilineata
+1021,Arremonops Rufivirgatus
+1022,Artemisiospiza Belli
+1023,Artemisiospiza Nevadensis
+1024,Calamospiza Melanocorys
+1025,Centronyx Henslowii
+1026,Chlorospingus Flavopectus
+1027,Chondestes Grammacus
+1028,Junco Hyemalis
+1029,Junco Phaeonotus
+1030,Melospiza Georgiana
+1031,Melospiza Lincolnii
+1032,Melospiza Melodia
+1033,Melozone Aberti
+1034,Melozone Crissalis
+1035,Melozone Fusca
+1036,Oriturus Superciliosus
+1037,Passerculus Sandwichensis
+1038,Passerella Iliaca
+1039,Peucaea Carpalis
+1040,Peucaea Cassinii
+1041,Peucaea Ruficauda
+1042,Pipilo Chlorurus
+1043,Pipilo Erythrophthalmus
+1044,Pipilo Maculatus
+1045,Pooecetes Gramineus
+1046,Spizella Atrogularis
+1047,Spizella Breweri
+1048,Spizella Pallida
+1049,Spizella Passerina
+1050,Spizella Pusilla
+1051,Spizelloides Arborea
+1052,Zonotrichia Albicollis
+1053,Zonotrichia Atricapilla
+1054,Zonotrichia Capensis
+1055,Zonotrichia Leucophrys
+1056,Zonotrichia Querula
+1057,Passer Diffusus
+1058,Passer Domesticus
+1059,Passer Hispaniolensis
+1060,Passer Italiae
+1061,Passer Melanurus
+1062,Passer Montanus
+1063,Eopsaltria Australis
+1064,Petroica Australis
+1065,Petroica Boodang
+1066,Petroica Longipes
+1067,Petroica Macrocephala
+1068,Peucedramus Taeniatus
+1069,Phylloscopus Collybita
+1070,Phylloscopus Sibilatrix
+1071,Phylloscopus Trochilus
+1072,Amblyospiza Albifrons
+1073,Euplectes Orix
+1074,Plocepasser Mahali
+1075,Ploceus Capensis
+1076,Ploceus Cucullatus
+1077,Ploceus Ocularis
+1078,Ploceus Philippinus
+1079,Ploceus Velatus
+1080,Quelea Quelea
+1081,Polioptila Caerulea
+1082,Polioptila Californica
+1083,Polioptila Dumicola
+1084,Polioptila Melanura
+1085,Promerops Cafer
+1086,Prunella Collaris
+1087,Prunella Modularis
+1088,Phainopepla Nitens
+1089,Ptiliogonys Cinereus
+1090,Ptilonorhynchus Violaceus
+1091,Andropadus Importunus
+1092,Hypsipetes Amaurotis
+1093,Hypsipetes Leucocephalus
+1094,Pycnonotus Aurigaster
+1095,Pycnonotus Barbatus
+1096,Pycnonotus Cafer
+1097,Pycnonotus Capensis
+1098,Pycnonotus Goiavier
+1099,Pycnonotus Jocosus
+1100,Pycnonotus Leucotis
+1101,Pycnonotus Sinensis
+1102,Regulus Calendula
+1103,Regulus Ignicapilla
+1104,Regulus Regulus
+1105,Regulus Satrapa
+1106,Auriparus Flaviceps
+1107,Remiz Pendulinus
+1108,Rhipidura Albiscapa
+1109,Rhipidura Fuliginosa
+1110,Rhipidura Leucophrys
+1111,Sitta Canadensis
+1112,Sitta Carolinensis
+1113,Sitta Europaea
+1114,Sitta Pusilla
+1115,Sitta Pygmaea
+1116,Acridotheres Cristatellus
+1117,Acridotheres Javanicus
+1118,Acridotheres Tristis
+1119,Aplonis Panayensis
+1120,Cinnyricinclus Leucogaster
+1121,Gracupica Contra
+1122,Gracupica Nigricollis
+1123,Lamprotornis Nitens
+1124,Onychognathus Morio
+1125,Spodiopsar Cineraceus
+1126,Sturnus Unicolor
+1127,Sturnus Vulgaris
+1128,Chamaea Fasciata
+1129,Sylvia Atricapilla
+1130,Sylvia Borin
+1131,Sylvia Communis
+1132,Sylvia Curruca
+1133,Sylvia Melanocephala
+1134,Thamnophilus Doliatus
+1135,Chlorophanes Spiza
+1136,Coereba Flaveola
+1137,Cyanerpes Cyaneus
+1138,Dacnis Cayana
+1139,Diglossa Baritula
+1140,Embernagra Platensis
+1141,Eucometis Penicillata
+1142,Loxigilla Noctis
+1143,Melanospiza Bicolor
+1144,Paroaria Capitata
+1145,Paroaria Coronata
+1146,Pipraeidea Bonariensis
+1147,Ramphocelus Carbo
+1148,Ramphocelus Dimidiatus
+1149,Ramphocelus Flammigerus
+1150,Ramphocelus Passerinii
+1151,Saltator Atriceps
+1152,Saltator Aurantiirostris
+1153,Saltator Coerulescens
+1154,Saltator Maximus
+1155,Sicalis Flaveola
+1156,Sicalis Luteola
+1157,Sporophila Caerulescens
+1158,Sporophila Corvina
+1159,Sporophila Morelleti
+1160,Sporophila Nigricollis
+1161,Sporophila Torqueola
+1162,Stilpnia Cyanicollis
+1163,Stilpnia Larvata
+1164,Stilpnia Vitriolina
+1165,Tachyphonus Rufus
+1166,Tangara Arthus
+1167,Tangara Gyrola
+1168,Tersina Viridis
+1169,Thraupis Abbas
+1170,Thraupis Episcopus
+1171,Thraupis Palmarum
+1172,Thraupis Sayaca
+1173,Tiaris Olivaceus
+1174,Volatinia Jacarina
+1175,Pachyramphus Aglaiae
+1176,Tityra Semifasciata
+1177,Campylorhynchus Brunneicapillus
+1178,Campylorhynchus Gularis
+1179,Campylorhynchus Rufinucha
+1180,Campylorhynchus Zonatus
+1181,Catherpes Mexicanus
+1182,Cistothorus Palustris
+1183,Cistothorus Platensis
+1184,Salpinctes Obsoletus
+1185,Thryomanes Bewickii
+1186,Thryothorus Ludovicianus
+1187,Troglodytes Aedon
+1188,Troglodytes Hiemalis
+1189,Troglodytes Pacificus
+1190,Troglodytes Troglodytes
+1191,Catharus Fuscescens
+1192,Catharus Guttatus
+1193,Catharus Minimus
+1194,Catharus Ustulatus
+1195,Hylocichla Mustelina
+1196,Ixoreus Naevius
+1197,Myadestes Townsendi
+1198,Sialia Currucoides
+1199,Sialia Mexicana
+1200,Sialia Sialis
+1201,Turdus Amaurochalinus
+1202,Turdus Chiguanco
+1203,Turdus Falcklandii
+1204,Turdus Fuscater
+1205,Turdus Grayi
+1206,Turdus Ignobilis
+1207,Turdus Iliacus
+1208,Turdus Leucomelas
+1209,Turdus Merula
+1210,Turdus Migratorius
+1211,Turdus Olivaceus
+1212,Turdus Philomelos
+1213,Turdus Pilaris
+1214,Turdus Rufiventris
+1215,Turdus Rufopalliatus
+1216,Turdus Viscivorus
+1217,Camptostoma Imberbe
+1218,Contopus Cooperi
+1219,Contopus Pertinax
+1220,Contopus Sordidulus
+1221,Contopus Virens
+1222,Elaenia Flavogaster
+1223,Empidonax Alnorum
+1224,Empidonax Difficilis
+1225,Empidonax Flaviventris
+1226,Empidonax Fulvifrons
+1227,Empidonax Hammondii
+1228,Empidonax Minimus
+1229,Empidonax Occidentalis
+1230,Empidonax Traillii
+1231,Empidonax Virescens
+1232,Empidonax Wrightii
+1233,Fluvicola Nengeta
+1234,Hymenops Perspicillatus
+1235,Machetornis Rixosa
+1236,Megarynchus Pitangua
+1237,Mitrephanes Phaeocercus
+1238,Myiarchus Cinerascens
+1239,Myiarchus Crinitus
+1240,Myiarchus Tuberculifer
+1241,Myiarchus Tyrannulus
+1242,Myiodynastes Luteiventris
+1243,Myiodynastes Maculatus
+1244,Myiozetetes Cayanensis
+1245,Myiozetetes Similis
+1246,Pitangus Sulphuratus
+1247,Pyrocephalus Rubinus
+1248,Sayornis Nigricans
+1249,Sayornis Phoebe
+1250,Sayornis Saya
+1251,Todirostrum Cinereum
+1252,Tolmomyias Sulphurescens
+1253,Tyrannus Couchii
+1254,Tyrannus Crassirostris
+1255,Tyrannus Dominicensis
+1256,Tyrannus Forficatus
+1257,Tyrannus Melancholicus
+1258,Tyrannus Savana
+1259,Tyrannus Tyrannus
+1260,Tyrannus Verticalis
+1261,Tyrannus Vociferans
+1262,Vidua Macroura
+1263,Cyclarhis Gujanensis
+1264,Vireo Bellii
+1265,Vireo Cassinii
+1266,Vireo Flavifrons
+1267,Vireo Flavoviridis
+1268,Vireo Gilvus
+1269,Vireo Griseus
+1270,Vireo Huttoni
+1271,Vireo Olivaceus
+1272,Vireo Philadelphicus
+1273,Vireo Plumbeus
+1274,Vireo Solitarius
+1275,Zosterops Japonicus
+1276,Zosterops Lateralis
+1277,Zosterops Palpebrosus
+1278,Zosterops Simplex
+1279,Zosterops Virens
+1280,Ardea Alba
+1281,Ardea Cinerea
+1282,Ardea Cocoi
+1283,Ardea Goliath
+1284,Ardea Herodias
+1285,Ardea Intermedia
+1286,Ardea Melanocephala
+1287,Ardea Pacifica
+1288,Ardea Purpurea
+1289,Ardeola Bacchus
+1290,Ardeola Grayii
+1291,Ardeola Ralloides
+1292,Botaurus Lentiginosus
+1293,Botaurus Stellaris
+1294,Bubulcus Ibis
+1295,Butorides Striata
+1296,Butorides Virescens
+1297,Cochlearius Cochlearius
+1298,Egretta Caerulea
+1299,Egretta Garzetta
+1300,Egretta Novaehollandiae
+1301,Egretta Rufescens
+1302,Egretta Sacra
+1303,Egretta Thula
+1304,Egretta Tricolor
+1305,Gorsachius Melanolophus
+1306,Ixobrychus Exilis
+1307,Ixobrychus Minutus
+1308,Ixobrychus Sinensis
+1309,Nyctanassa Violacea
+1310,Nycticorax Caledonicus
+1311,Nycticorax Nycticorax
+1312,Syrigma Sibilatrix
+1313,Tigrisoma Lineatum
+1314,Tigrisoma Mexicanum
+1315,Pelecanus Conspicillatus
+1316,Pelecanus Crispus
+1317,Pelecanus Erythrorhynchos
+1318,Pelecanus Occidentalis
+1319,Pelecanus Onocrotalus
+1320,Pelecanus Philippensis
+1321,Pelecanus Thagus
+1322,Scopus Umbretta
+1323,Bostrychia Hagedash
+1324,Eudocimus Albus
+1325,Mesembrinibis Cayennensis
+1326,Phimosus Infuscatus
+1327,Platalea Ajaja
+1328,Platalea Alba
+1329,Platalea Flavipes
+1330,Platalea Leucorodia
+1331,Platalea Minor
+1332,Platalea Regia
+1333,Plegadis Chihi
+1334,Plegadis Falcinellus
+1335,Theristicus Caudatus
+1336,Theristicus Melanopis
+1337,Threskiornis Aethiopicus
+1338,Threskiornis Melanocephalus
+1339,Threskiornis Molucca
+1340,Threskiornis Spinicollis
+1341,Phoeniconaias Minor
+1342,Phoenicopterus Chilensis
+1343,Phoenicopterus Roseus
+1344,Phoenicopterus Ruber
+1345,Lybius Torquatus
+1346,Trachyphonus Vaillantii
+1347,Psilopogon Haemacephalus
+1348,Psilopogon Nuchalis
+1349,Campephilus Guatemalensis
+1350,Campephilus Melanoleucos
+1351,Chloropicus Fuscescens
+1352,Colaptes Auratus
+1353,Colaptes Campestris
+1354,Colaptes Chrysoides
+1355,Colaptes Melanochloros
+1356,Colaptes Punctigula
+1357,Colaptes Rubiginosus
+1358,Dendrocopos Leucotos
+1359,Dendrocopos Major
+1360,Dendrocopos Syriacus
+1361,Dendrocoptes Medius
+1362,Dinopium Benghalense
+1363,Dryobates Albolarvatus
+1364,Dryobates Borealis
+1365,Dryobates Minor
+1366,Dryobates Nuttallii
+1367,Dryobates Pubescens
+1368,Dryobates Scalaris
+1369,Dryobates Villosus
+1370,Dryocopus Lineatus
+1371,Dryocopus Martius
+1372,Dryocopus Pileatus
+1373,Jynx Torquilla
+1374,Melanerpes Aurifrons
+1375,Melanerpes Carolinus
+1376,Melanerpes Chrysogenys
+1377,Melanerpes Erythrocephalus
+1378,Melanerpes Formicivorus
+1379,Melanerpes Hoffmannii
+1380,Melanerpes Lewis
+1381,Melanerpes Pucherani
+1382,Melanerpes Rubricapillus
+1383,Melanerpes Uropygialis
+1384,Picoides Arcticus
+1385,Picoides Dorsalis
+1386,Picus Canus
+1387,Picus Viridis
+1388,Sphyrapicus Nuchalis
+1389,Sphyrapicus Ruber
+1390,Sphyrapicus Thyroideus
+1391,Sphyrapicus Varius
+1392,Aulacorhynchus Prasinus
+1393,Pteroglossus Castanotis
+1394,Pteroglossus Torquatus
+1395,Ramphastos Ambiguus
+1396,Ramphastos Sulfuratus
+1397,Ramphastos Toco
+1398,Aechmophorus Clarkii
+1399,Aechmophorus Occidentalis
+1400,Podiceps Auritus
+1401,Podiceps Cristatus
+1402,Podiceps Grisegena
+1403,Podiceps Major
+1404,Podiceps Nigricollis
+1405,Podilymbus Podiceps
+1406,Poliocephalus Poliocephalus
+1407,Rollandia Rolland
+1408,Tachybaptus Dominicus
+1409,Tachybaptus Novaehollandiae
+1410,Tachybaptus Ruficollis
+1411,Phoebastria Immutabilis
+1412,Phoebastria Nigripes
+1413,Thalassarche Melanophris
+1414,Ardenna Creatopus
+1415,Ardenna Grisea
+1416,Ardenna Pacifica
+1417,Calonectris Diomedea
+1418,Fulmarus Glacialis
+1419,Macronectes Giganteus
+1420,Cacatua Galerita
+1421,Cacatua Sanguinea
+1422,Cacatua Tenuirostris
+1423,Callocephalon Fimbriatum
+1424,Calyptorhynchus Banksii
+1425,Calyptorhynchus Funereus
+1426,Eolophus Roseicapilla
+1427,Amazona Albifrons
+1428,Amazona Autumnalis
+1429,Amazona Finschi
+1430,Amazona Viridigenalis
+1431,Ara Ararauna
+1432,Ara Macao
+1433,Aratinga Nenday
+1434,Brotogeris Chiriri
+1435,Brotogeris Jugularis
+1436,Eupsittula Canicularis
+1437,Eupsittula Nana
+1438,Eupsittula Pertinax
+1439,Forpus Conspicillatus
+1440,Myiopsitta Monachus
+1441,Pionus Menstruus
+1442,Psittacara Erythrogenys
+1443,Psittacara Holochlorus
+1444,Psittacara Leucophthalmus
+1445,Psittacara Mitratus
+1446,Agapornis Roseicollis
+1447,Alisterus Scapularis
+1448,Barnardius Zonarius
+1449,Cyanoramphus Novaezelandiae
+1450,Glossopsitta Concinna
+1451,Melopsittacus Undulatus
+1452,Platycercus Adscitus
+1453,Platycercus Elegans
+1454,Platycercus Eximius
+1455,Psephotus Haematonotus
+1456,Psittacula Krameri
+1457,Trichoglossus Chlorolepidotus
+1458,Trichoglossus Moluccanus
+1459,Nestor Meridionalis
+1460,Nestor Notabilis
+1461,Eudyptula Minor
+1462,Pygoscelis Papua
+1463,Spheniscus Demersus
+1464,Spheniscus Magellanicus
+1465,Aegolius Acadicus
+1466,Asio Flammeus
+1467,Asio Otus
+1468,Athene Brama
+1469,Athene Cunicularia
+1470,Athene Noctua
+1471,Bubo Africanus
+1472,Bubo Bubo
+1473,Bubo Scandiacus
+1474,Bubo Virginianus
+1475,Ciccaba Virgata
+1476,Glaucidium Brasilianum
+1477,Glaucidium Gnoma
+1478,Megascops Asio
+1479,Megascops Choliba
+1480,Megascops Kennicottii
+1481,Ninox Novaeseelandiae
+1482,Strix Aluco
+1483,Strix Nebulosa
+1484,Strix Uralensis
+1485,Strix Varia
+1486,Surnia Ulula
+1487,Tyto Alba
+1488,Struthio Camelus
+1489,Anhinga Anhinga
+1490,Anhinga Melanogaster
+1491,Anhinga Novaehollandiae
+1492,Anhinga Rufa
+1493,Fregata Magnificens
+1494,Microcarbo Africanus
+1495,Microcarbo Melanoleucos
+1496,Microcarbo Niger
+1497,Microcarbo Pygmaeus
+1498,Phalacrocorax Aristotelis
+1499,Phalacrocorax Auritus
+1500,Phalacrocorax Brasilianus
+1501,Phalacrocorax Capensis
+1502,Phalacrocorax Carbo
+1503,Phalacrocorax Pelagicus
+1504,Phalacrocorax Penicillatus
+1505,Phalacrocorax Punctatus
+1506,Phalacrocorax Sulcirostris
+1507,Phalacrocorax Varius
+1508,Morus Bassanus
+1509,Morus Serrator
+1510,Sula Dactylatra
+1511,Sula Leucogaster
+1512,Sula Nebouxii
+1513,Sula Sula
+1514,Pharomachrus Mocinno
+1515,Trogon Caligatus
+1516,Trogon Citreolus
+1517,Trogon Collaris
+1518,Trogon Elegans
+1519,Trogon Massena
+1520,Trogon Melanocephalus
+1521,Trogon Rufus
+1522,Anna Hummingbird
+1523,Antbird
+1524,Antillean Euphonia
+1525,Apapane
+1526,Apostlebird
+1527,Araripe Manakin
+1528,Artic Tern
+1529,Ashy Storm Petrel
+1530,Ashy Thrushbird
+1531,Asian Crested Ibis
+1532,Asian Dollard
+1533,Asian Green Bee Eater
+1534,Asian Openbill Stork
+1535,Auckland Shaq
+1536,Austral Canastero
+1537,Australasian Figbird
+1538,Avadavat
+1539,Azaras Spinetail
+1540,Azure Breasted Pitta
+1541,Azure Jay
+1542,Azure Tanager
+1543,Azure Tit
+1544,Babblers
+1545,Baikal Teal
+1546,Baird Sparrow
+1547,Bald Eagle
+1548,Bald Ibis
+1549,Bali Starling
+1550,Baltimore Oriole
+1551,Bananaquit
+1552,Band Tailed Guan
+1553,Banded Broadbill
+1554,Banded Pita
+1555,Banded Stilt
+1556,Bank Swallow
+1557,Bar Tailed Godwit
+1558,Barbets
+1559,Barn Swallow
+1560,Barred Puffbird
+1561,Barrows Goldeneye
+1562,Bay Breasted Warbler
+1563,Bearded Barbet
+1564,Bearded Bellbird
+1565,Bearded Reedling
+1566,Belted Kingfisher
+1567,Bewick Wren
+1568,Of Paradise
+1569,Black And White Warbler
+1570,Black And Yellow Broadbill
+1571,Black Baza
+1572,Black Billed Cuckoo
+1573,Black Breasted Puffbird
+1574,Black Capped Chickadee
+1575,Black Capped Vireo
+1576,Black Cockato
+1577,Black Faced Spoonbill
+1578,Black Footed Albatross
+1579,Black Francolin
+1580,Black Headed Caique
+1581,Black Necked Grebe
+1582,Black Necked Stilt
+1583,Black Skimmer
+1584,Black Swan
+1585,Black Tail Crake
+1586,Black Tern
+1587,Black Throated Blue Warbler
+1588,Black Throated Bushtit
+1589,Black Throated Huet
+1590,Black Throated Sparrow
+1591,Black Throated Warbler
+1592,Black Vented Shearwater
+1593,Black Vulture
+1594,Blackburniam Warbler
+1595,Blonde Crested Woodpecker
+1596,Blood Pheasant
+1597,Blue Coau
+1598,Blue Dacnis
+1599,Blue Gray Gnatcatcher
+1600,Blue Grosbeak
+1601,Blue Grouse
+1602,Blue Headed Vireo
+1603,Blue Heron
+1604,Blue Jay
+1605,Blue Malkoha
+1606,Blue Throated Piping Guan
+1607,Blue Throated Toucanet
+1608,Blue Winged Warbler
+1609,Boat Tailed Grackle
+1610,Bobolink
+1611,Bohemian Waxwing
+1612,Bornean Bristlehead
+1613,Bornean Leafbird
+1614,Bornean Pheasant
+1615,Brandt Cormorant
+1616,Brewer Blackbird
+1617,Brewer Sparrow
+1618,Brewers Blackbird
+1619,Bronzed Cowbird
+1620,Brown Creeper
+1621,Brown Headed Barbet
+1622,Brown Headed Cowbird
+1623,Brown Noody
+1624,Brown Pelican
+1625,Brown Thrasher
+1626,Bufflehead
+1627,Bulbuls
+1628,Bulwers Pheasant
+1629,Burchells Courser
+1630,Bush Turkey
+1631,Caatinga Cacholote
+1632,Cabots Tragopan
+1633,Cactus Wren
+1634,California Condor
+1635,California Gull
+1636,California Quail
+1637,Campo Flicker
+1638,Canada Warbler
+1639,Canary
+1640,Canvasback
+1641,Cape Glossy Starling
+1642,Cape Longclaw
+1643,Cape May Warbler
+1644,Cape Rock Thrush
+1645,Capped Heron
+1646,Capuchinbird
+1647,Cardinal
+1648,Carmine Bee Eater
+1649,Carolina Wren
+1650,Caspian Tern
+1651,Cassowary
+1652,Cattle Egret
+1653,Cedar Waxwing
+1654,Cerulean Warbler
+1655,Chara De Collar
+1656,Chattering Lory
+1657,Chestnut Bellied Euphonia
+1658,Chestnut Sided Warbler
+1659,Chestnut Winged Cuckoo
+1660,Chinese Bamboo Partridge
+1661,Chinese Pond Heron
+1662,Chipping Sparrow
+1663,Chucao Tapaculo
+1664,Chuck Will Widow
+1665,Chukar Partridge
+1666,Cinnamon Attila
+1667,Cinnamon Flycatcher
+1668,Cinnamon Teal
+1669,Clark Nutcracker
+1670,Clarks Grebe
+1671,Clay Colored Sparrow
+1672,Cliff Swallow
+1673,Cock Of The Rock
+1674,Cockatoo
+1675,Collared Aracari
+1676,Collared Crescentchest
+1677,Common Firecrest
+1678,Common Grackle
+1679,Common House Martin
+1680,Common Iora
+1681,Common Loon
+1682,Common Poorwill
+1683,Common Raven
+1684,Common Rosefinch
+1685,Common Starling
+1686,Common Tailorbird
+1687,Common Teal
+1688,Common Tern
+1689,Common Yellowthroat
+1690,Coots
+1691,Coppersmith Barbet
+1692,Coppery Tailed Coucal
+1693,Largebilled Crow
+1694,Crab Plover
+1695,Crane Hawk
+1696,Cranes
+1697,Cream Colored Woodpecker
+1698,Crested Auklet
+1699,Crested Caracara
+1700,Crested Coua
+1701,Crested Fireback
+1702,Crested Kingfisher
+1703,Crested Nuthatch
+1704,Crested Oropendola
+1705,Crested Serpent Eagle
+1706,Crested Shriketit
+1707,Crested Wood Partridge
+1708,Crimson Chat
+1709,Crimson Sunbird
+1710,Cuban Tody
+1711,Cuban Trogon
+1712,Cuckoos
+1713,Curl Crested Aracari
+1714,D Arnauds Barbet
+1715,Dalmatian Pelican
+1716,Darjeeling Woodpecker
+1717,Dark Eyed Junco
+1718,Daurian Redstart
+1719,Demoiselle Crane
+1720,Diomedeidae Albatross
+1721,Double Barred Finch
+1722,Double Breasted Cormorant
+1723,Double Eyed Fig Parrot
+1724,Doves
+1725,Downy Woodpecker
+1726,Drongos
+1727,Ducks
+1728,Dunlin
+1729,Dusky Lory
+1730,Dusky Robin
+1731,Eagles
+1732,Eared Grebe
+1733,Eared Pita
+1734,Eastern Bluebird
+1735,Eastern Bluebonnet
+1736,Eastern Golden Weaver
+1737,Eastern Meadowlark
+1738,Eastern Rosella
+1739,Eastern Towhee
+1740,Eastern Wip Poor Will
+1741,Eastern Yellow Robin
+1742,Ecuadorian Hillstar
+1743,Egrets
+1744,Egyptian Goose
+1745,Elegant Tern
+1746,Elegant Trogon
+1747,Elliots Pheasant
+1748,Emerald Tanager
+1749,Emperor Penguin
+1750,Emu
+1751,Enggano Myna
+1752,Eurasian Bullfinch
+1753,Eurasian Golden Oriole
+1754,Eurasian Magpie
+1755,European Goldfinch
+1756,European Turtle Dove
+1757,Evening Grosbeak
+1758,Fairy Bluebird
+1759,Fairy Penguin
+1760,Fairy Tern
+1761,Falcons
+1762,Fan Tailed Widow
+1763,Fasciated Wren
+1764,Field Sparrow
+1765,Fiery Minivet
+1766,Finches
+1767,Fiordland Penguin
+1768,Fire Tailled Myzornis
+1769,Fish Crow
+1770,Flame Bowerbird
+1771,Flame Tanager
+1772,Florida Jay
+1773,Flycatchers
+1774,Forest Wagtail
+1775,Forsters Tern
+1776,Fox Sparrow
+1777,Frigate
+1778,Frigatebird
+1779,Frill Back Pigeon
+1780,Gadwall
+1781,Gambels Quail
+1782,Gang Gang Cockatoo
+1783,Geococcyx
+1784,Gila Woodpecker
+1785,Gilded Flicker
+1786,Glaucous Winged Gull
+1787,Glossy Ibis
+1788,Go Away
+1789,Gold Wing Warbler
+1790,Golden Bower
+1791,Golden Cheeked Warbler
+1792,Golden Chlorophonia
+1793,Golden Eagle
+1794,Golden Parakeet
+1795,Golden Pheasant
+1796,Golden Pipit
+1797,Golden Winged Warbler
+1798,Gouldian Finch
+1799,Grandala
+1800,Grasshopper Sparrow
+1801,Gray Catbird
+1802,Gray Crowned Rosy Finch
+1803,Gray Kingbird
+1804,Gray Partridge
+1805,Gray Wagtail
+1806,Great Argus
+1807,Great Crested Flycatcher
+1808,Great Gray Owl
+1809,Great Grey Shrike
+1810,Great Jacamar
+1811,Great Kiskadee
+1812,Great Potoo
+1813,Great Tinamou
+1814,Great Xenops
+1815,Greater Pewee
+1816,Greater Prairie Chicken
+1817,Greator Sage Grouse
+1818,Green Broadbill
+1819,Green Jay
+1820,Green Kingfisher
+1821,Green Magpie
+1822,Green Tailed Towhee
+1823,Green Violetear
+1824,Green Winged Dove
+1825,Grey Cuckooshrike
+1826,Grey Headed Chachalaca
+1827,Grey Headed Fish Eagle
+1828,Grey Plover
+1829,Groove Billed Ani
+1830,Guinea Turaco
+1831,Guineafowl
+1832,Gurneys Pitta
+1833,Gyrfalcon
+1834,Hamerkop
+1835,Harlequin Duck
+1836,Harlequin Quail
+1837,Harpy Eagle
+1838,Harris Sparrow
+1839,Hawaiian Goose
+1840,Hawfinch
+1841,Heermann Gull
+1842,Helmet Vanga
+1843,Henslow Sparrow
+1844,Hepatic Tanager
+1845,Herons
+1846,Herring Gull
+1847,Himalayan Bluetail
+1848,Himalayan Monal
+1849,Hoatzin
+1850,Hooded Merganser
+1851,Hooded Oriole
+1852,Hooded Warbler
+1853,Hoopoe
+1854,Hornbills
+1855,Horned Grebe
+1856,Horned Guan
+1857,Horned Lark
+1858,Horned Puffin
+1859,Horned Sungem
+1860,House Crow
+1861,House Finch
+1862,House Sparrow
+1863,House Wren
+1864,Hyacinth Macaw
+1865,Iberian Magpie
+1866,Ibisbill
+1867,Imperial Shaq
+1868,Inca Tern
+1869,Indian Bustard
+1870,Indian Grey Hornbill
+1871,Indian Pitta
+1872,Indian Roller
+1873,Indian Vulture
+1874,Indigo Bunting
+1875,Indigo Flycatcher
+1876,Inland Dotterel
+1877,Ivory Billed Aracari
+1878,Ivory Gull
+1879,Iwi
+1880,Jabiru
+1881,Jacanas
+1882,Jack Snipe
+1883,Jacobin Pigeon
+1884,Jandaya Parakeet
+1885,Japanese Robin
+1886,Java Sparrow
+1887,Jocotoco Antpitta
+1888,Jungle Babbler
+1889,Kagu
+1890,Kakapo
+1891,Kentucky Warbler
+1892,Killdear
+1893,King Eider
+1894,King Vulture
+1895,Kingfishers
+1896,Kiwi
+1897,Knob Billed Duck
+1898,Kookaburra
+1899,Lark Bunting
+1900,Laughing Gull
+1901,Laysan Albatross
+1902,Lazuli Bunting
+1903,Le Conte Sparrow
+1904,Least Auklet
+1905,Least Flycatcher
+1906,Least Tern
+1907,Lesser Adjutant
+1908,Lilac Roller
+1909,Limpkin
+1910,Lincoln Sparrow
+1911,Little Auk
+1912,Loggerhead Shrike
+1913,Long Eared Owl
+1914,Long Tailed Jaeger
+1915,Looney S
+1916,Louisiana Waterthrush
+1917,Lucifer Hummingbird
+1918,Magnolia Warbler
+1919,Magpie Goose
+1920,Malabar Hornbill
+1921,Malachite Kingfisher
+1922,Malagasy White Eye
+1923,Maleo
+1924,Mandarin Duck
+1925,Mangrove Cuckoo
+1926,Marabou Stork
+1927,Marsh Wren
+1928,Masked Bobwhite
+1929,Masked Booby
+1930,Masked Lapwing
+1931,Mckays Bunting
+1932,Merlin
+1933,Mikado Pheasant
+1934,Military Macaw
+1935,Mockingbird
+1936,Mourning Dove
+1937,Mourning Warbler
+1938,Munias
+1939,Myrtle Warbler
+1940,Nashville Warbler
+1941,Nelson Sharp Tailed Sparrow
+1942,Nicobar Pigeon
+1943,Nighthawk
+1944,Nightjars
+1945,Noisy Friarbird
+1946,Northern Beardless Tyrannulet
+1947,Northern Cardinal
+1948,Northern Flicker
+1949,Northern Fulmar
+1950,Northern Gannet
+1951,Northern Goshawk
+1952,Northern Jacana
+1953,Northern Lapwing
+1954,Northern Mockingbird
+1955,Northern Parula
+1956,Northern Red Bishop
+1957,Northern Shoveler
+1958,Northern Waterthrush
+1959,Ocellated Turkey
+1960,Oilbird
+1961,Okinawa Rail
+1962,Olive Sided Flycatcher
+1963,Orange Breasted Trogon
+1964,Orange Brested Bunting
+1965,Orange Crowned Warbler
+1966,Orchard Oriole
+1967,Oriental Bay Owl
+1968,Orioles
+1969,Ornate Hawk Eagle
+1970,Osprey
+1971,Ostrich
+1972,Ovenbird
+1973,Owls
+1974,Oyster Catcher
+1975,Pacific Loon
+1976,Painted Bunting
+1977,Palila
+1978,Palm Nut Vulture
+1979,Palm Warbler
+1980,Paradise Tanager
+1981,Parakeet Auklet
+1982,Parakeets
+1983,Parakett Auklet
+1984,Parus Major
+1985,Patagonian Sierra Finch
+1986,Peacock
+1987,Peacock
+1988,Pelagic Cormorant
+1989,Peregrine Falcon
+1990,Pesants
+1991,Phainopepla
+1992,Philadelphia Vireo
+1993,Philippine Eagle
+1994,Pied Billed Grebe
+1995,Pied Kingfisher
+1996,Pigeon Guillemot
+1997,Pigeons
+1998,Pileated Woodpecker
+1999,Pine Grosbeak
+2000,Pine Warbler
+2001,Pink Robin
+2002,Plovers
+2003,Plush Crested Jay
+2004,Pomarine Jaeger
+2005,Prairie Warbler
+2006,Prinias
+2007,Prothonotary Warbler
+2008,Puffin
+2009,Puna Teal
+2010,Purple Finch
+2011,Purple Gallinule
+2012,Purple Martin
+2013,Purple Swamphen
+2014,Pygmy Kingfisher
+2015,Pyrrhuloxia
+2016,Quetzal
+2017,Rainbow Lorikeet
+2018,Razorbill
+2019,Red Bearded Bee Eater
+2020,Red Bellied Pitta
+2021,Red Bellied Woodpecker
+2022,Red Billed Tropicbird
+2023,Red Breasted Merganser
+2024,Red Browed Finch
+2025,Red Cockaded Woodpecker
+2026,Red Crossbill
+2027,Red Eyed Vireo
+2028,Red Faced Cormorant
+2029,Red Faced Warbler
+2030,Red Fody
+2031,Red Headed Duck
+2032,Red Headed Woodpecker
+2033,Red Knot
+2034,Red Legged Honeycreeper
+2035,Red Legged Kittiwake
+2036,Red Naped Trogon
+2037,Red Shouldered Hawk
+2038,Red Tailed Hawk
+2039,Red Tailed Thrush
+2040,Red Wattled Lapwing
+2041,Red Whiskered Bulbul
+2042,Red Winged Blackbird
+2043,Regent Bowerbird
+2044,Rhinoceros Auklet
+2045,Ring Billed Gull
+2046,Ring Necked Pheasant
+2047,Ringed Kingfisher
+2048,Roadrunner
+2049,Robins
+2050,Rock Dove
+2051,Rock Wren
+2052,Rose Breasted Cockatoo
+2053,Rose Breasted Grosbeak
+2054,Roseate Spoonbill
+2055,Rosy Faced Lovebird
+2056,Rough Leg Buzzard
+2057,Royal Flycatcher
+2058,Ruby Crowned Kinglet
+2059,Ruby Throated Hummingbird
+2060,Ruddy Shelduck
+2061,Rudy Kingfisher
+2062,Rufous Hummingbird
+2063,Rufous Kingfisher
+2064,Rufous Motmot
+2065,Rufous Treepie
+2066,Rufous Trepe
+2067,Rusty Blackbird
+2068,Sage Thrasher
+2069,Sand Martin
+2070,Sandhill Crane
+2071,Sandpipers
+2072,Sarus Crane
+2073,Satyr Tragopan
+2074,Savannah Sparrow
+2075,Sayornis
+2076,Says Phoebe
+2077,Scarlet Crowned Fruit Dove
+2078,Scarlet Faced Liocichla
+2079,Scarlet Ibis
+2080,Scarlet Macaw
+2081,Scarlet Tanager
+2082,Scissor Tailed Flycatcher
+2083,Scott Oriole
+2084,Seaside Sparrow
+2085,Shiny Cowbird
+2086,Shoebill
+2087,Short Billed Dowitcher
+2088,Shrikes
+2089,Slaty Backed Gull
+2090,Smiths Longspur
+2091,Snow Goose
+2092,Snow Partridge
+2093,Snowy Egret
+2094,Snowy Owl
+2095,Snowy Plover
+2096,Snowy Sheathbill
+2097,Song Sparrow
+2098,Sooty Albatross
+2099,Sora
+2100,Spangled Cotinga
+2101,Splendid Wren
+2102,Spoon Biled Sandpiper
+2103,Spotted Catbird
+2104,Spotted Whistling Duck
+2105,Squacco Heron
+2106,Sri Lanka Blue Magpie
+2107,Steamer Duck
+2108,Stork Billed Kingfisher
+2109,Storks
+2110,Striated Caracara
+2111,Striped Owl
+2112,Stripped Manakin
+2113,Stripped Swallow
+2114,Sumatran Thrush
+2115,Summer Tanager
+2116,Sunbirds
+2117,Sunbittern
+2118,Superb Starling
+2119,Surf Scoter
+2120,Swainson Warbler
+2121,Swallows
+2122,Swamphens
+2123,Swifts
+2124,Swinhoes Pheasant
+2125,Tailorbird
+2126,Taiwan Magpie
+2127,Takahe
+2128,Tasmanian Hen
+2129,Tawny Frogmouth
+2130,Tennessee Warbler
+2131,Terns
+2132,Tit Mouse
+2133,Tits
+2134,Toucan
+2135,Townsends Warbler
+2136,Tree Sparrow
+2137,Tree Swallow
+2138,Tricolored Blackbird
+2139,Tropical Kingbird
+2140,Trumpeter Swan
+2141,Turkey Vulture
+2142,Turquoise Motmot
+2143,Common Barnowl
+2144,Umbrella
+2145,Varied Thrush
+2146,Veery
+2147,Venezuelian Troupial
+2148,Verdin
+2149,Vermilion Flycatcher
+2150,Vesper Sparrow
+2151,Victoria Crowned Pigeon
+2152,Violet Backed Starling
+2153,Violet Cuckoo
+2154,Violet Green Swallow
+2155,Violet Turaco
+2156,Visayan Hornbill
+2157,Vulturine Guineafowl
+2158,Wagtails
+2159,Wallcreeper
+2160,Warblers
+2161,Warbling Vireo
+2162,Wattled Curassow
+2163,Wattled Lapwing
+2164,Western Grebe
+2165,Western Gull
+2166,Western Meadowlark
+2167,Western Wood Pewee
+2168,Whimbrel
+2169,Whip Poor Will
+2170,White Breasted Kingfisher
+2171,White Breasted Nuthatch
+2172,White Breasted Waterhen
+2173,White Browed Crake
+2174,White Cheeked Turaco
+2175,White Crested Hornbill
+2176,White Crowned Sparrow
+2177,White Eared Hummingbird
+2178,White Eyed Vireo
+2179,White Necked Raven
+2180,White Pelican
+2181,White Tailed Tropic
+2182,White Throated Bee Eater
+2183,White Throated Sparrow
+2184,White Wagtail
+2185,Wild Turkey
+2186,Willow Ptarmigan
+2187,Wilson Warbler
+2188,Wilsons  Of Paradise
+2189,Winter Wren
+2190,Wood Duck
+2191,Wood Thrush
+2192,Woodland Kingfisher
+2193,Woodpeckers
+2194,Worm Eating Warbler
+2195,Wrentit
+2196,Yellow Bellied Flowerpecker
+2197,Yellow Bellied Flycatcher
+2198,Yellow Billed Cuckoo
+2199,Yellow Breasted Chat
+2200,Yellow Cacique
+2201,Yellow Headed Blackbird
+2202,Yellow Throated Vireo
+2203,Yellow Warbler
+2204,Zebra Dove

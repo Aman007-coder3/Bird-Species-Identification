@@ -49,6 +49,7 @@ def inject_css():
 
     st.html(f"""
     <style>
+        /* Base Desktop Styles */
         #MainMenu, header, footer, [data-testid="stToolbar"], .stDeployButton, [data-testid="stSidebar"] {{ display: none !important; }}
         .stApp {{ background-color: {bg_color}; min-height: 100vh; font-family: 'Inter', sans-serif; color: {text_main}; }}
         .theme-toggle-btn {{ position: absolute; top: 20px; right: 20px; z-index: 1000; background: {panel_bg}; border: 1px solid {border_color}; color: {text_main}; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; }}
@@ -72,6 +73,23 @@ def inject_css():
         .result-score {{ color: {accent_teal}; font-size: 1.1rem; font-weight: 600; }}
         .error-card {{ background: rgba(255, 0, 0, 0.1); border: 1px solid rgba(255, 0, 0, 0.3); border-radius: 16px; padding: 30px; text-align: center; margin-top: 20px; }}
         .error-text {{ font-size: 1.5rem; color: #ff4b4b; font-weight: bold; }}
+
+        /* 🔥 MOBILE RESPONSIVE CSS 🔥 */
+        @media screen and (max-width: 768px) {{
+            [data-testid="stHorizontalBlock"] {{ padding: 1rem 1rem !important; gap: 1rem !important; }}
+            .main-content {{ padding: 20px !important; border-radius: 15px !important; }}
+            details.left-panel {{ padding: 20px !important; border-radius: 15px !important; }}
+            .hero-title {{ font-size: 2rem !important; }}
+            .hero-sub {{ font-size: 0.9rem !important; }}
+            [data-testid="stFileUploader"] > div {{ padding: 15px !important; }}
+            .result-card {{ padding: 20px !important; }}
+            .result-text {{ font-size: 1.6rem !important; }}
+        }}
+        @media screen and (max-width: 480px) {{
+            .hero-title {{ font-size: 1.7rem !important; }}
+            .tag {{ font-size: 10px !important; padding: 4px 8px !important; margin: 2px !important; }}
+            .panel-logo-title {{ font-size: 18px !important; }}
+        }}
     </style>
     """)
 

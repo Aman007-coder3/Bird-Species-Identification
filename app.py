@@ -9,8 +9,8 @@ import os
 import gdown
 
 # --- 0. YOUR GOOGLE DRIVE IDs ---
-MODEL_GDRIVE_ID = "https://drive.google.com/file/d/11iEKDMD8ni2Vvr0X8GqogYXQrKKqXjy6/view?usp=drive_link"
-CSV_GDRIVE_ID = "https://drive.google.com/file/d/14uCsKawYeM3g0_tHidQkwV30pGQWrHJS/view?usp=drive_link"
+MODEL_GDRIVE_ID = "11iEKDMD8ni2Vvr0X8GqogYXQrKKqXjy6"
+CSV_GDRIVE_ID = "14uCsKawYeM3g0_tHidQkwV30pGQWrHJS"
 
 # --- 1. PAGE CONFIGURATION ---
 st.set_page_config(

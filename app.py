@@ -244,7 +244,7 @@ with left_col:
                 <span class="tag">Bal Krishna Rao (2200430100024)</span>
                 <span class="tag">Suryank Mishra (2200430100057)</span>
                 <span class="tag">Yugank Singh (2200430100070)</span>
-                <span class="tag">Rohit Kumar Bharti (2200430109005)</span>
+                <span class="tag">Rohit Kumar Bharti (2300430109005)</span>
             </div>
         </div>
     </details>
@@ -254,12 +254,12 @@ with main_col:
     st.html("""
     <div class="main-content">
         <h1 class="hero-title">Bird Species <span>Identification</span></h1>
-        <p class="hero-sub">Powered by YOLOv8 Object Detection and EfficientNet Deep Learning.</p>
+        <p class="hero-sub">Using Deep Learning.</p>
     </div>
     """)
 
     st.write("")
-    uploaded_file = st.file_uploader(label="Upload Image", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
+    uploaded_file = st.file_uploader(label="Upload Image", type=["jpg", "jpeg", "png" ,"webp"], label_visibility="collapsed")
 
     if uploaded_file is not None:
         img_col, res_col = st.columns([1, 1], gap="large")
@@ -278,7 +278,6 @@ with main_col:
                     <p class="result-label">Classification Result</p>
                     <p class="result-text">{species_name}</p>
                     <p class="result-score">Confidence Score: {confidence:.2f}%</p>
-                    <p style="font-size:10px; color:#8892b0; margin-top:10px;">Pipeline: {message}</p>
                 </div>
                 """)
                 st.progress(confidence / 100)

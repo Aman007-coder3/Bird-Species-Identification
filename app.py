@@ -8,7 +8,6 @@ import cv2
 import os
 import urllib.request
 
-
 # --- 1. PAGE CONFIGURATION ---
 st.set_page_config(
     page_title="Bird Species Identification",
@@ -84,56 +83,56 @@ with col_btn:
 
 
 # --- 4. DATA & MODEL LOADING ---
-
 @st.cache_data
 def load_database():
-    csv_path = 'bird_master_database.csv'
+    csv_path = 'bird_master_database.csv' # Make sure this matches your GitHub exactly!
     try:
-        # Since the CSV is now directly in your GitHub repo, we just read it instantly!
         df = pd.read_csv(csv_path)
         names_list = df['Bird_Species'].tolist()
-        summary_dict = dict(zip(df['Bird_Species'], df['Wiki_Summary']))
+        
+        # Check if Wiki_Summary exists (if you ran the offline database script)
+        if 'Wiki_Summary' in df.columns:
+            summary_dict = dict(zip(df['Bird_Species'], df['Wiki_Summary']))
+        else:
+            summary_dict = {}
+            
         return names_list, summary_dict
     except Exception as e:
         st.error(f"Could not load database: {e}")
+        # The ultimate failsafe: matches your EXACT training parameters
         return ["Unknown"] * 2205, {}
 
 @st.cache_resource
 def load_classification_model():
     model_path = 'bird_model_V2_final.keras'
     
-    # ⚠️ PASTE YOUR CORRECT GITHUB RELEASE LINK HERE:
+    # Your verified golden link
     MODEL_URL = "https://github.com/Aman007-coder3/Bird-Species-Identification/releases/download/v1.0/bird_model_V2_final.keras"
     
-    # --- THE AGGRESSIVE CLEANUP ---
-    # EfficientNet models are large. If the file is less than 20MB, it's a corrupted HTML page.
+    # 1. Aggressive Cleanup Check (Deletes fake webpages)
     if os.path.exists(model_path):
         size_in_mb = os.path.getsize(model_path) / (1024 * 1024)
         if size_in_mb < 20.0:
-            print(f"Found corrupted file ({size_in_mb:.2f} MB). Deleting...")
             os.remove(model_path)
     
-    # --- THE DOWNLOADER ---
+    # 2. GitHub Release Downloader
     if not os.path.exists(model_path):
         st.info("⬇️ Downloading High-Resolution AI Model from GitHub (This takes about 30 seconds)...")
         try:
             urllib.request.urlretrieve(MODEL_URL, model_path)
-            
-            # Verify the download worked
             new_size = os.path.getsize(model_path) / (1024 * 1024)
             if new_size < 20.0:
-                st.error(f"❌ Download failed! The file is only {new_size:.2f} MB. You copied the wrong GitHub link.")
+                st.error("❌ Download failed! The downloaded file is broken/too small.")
                 os.remove(model_path)
                 st.stop()
             else:
                 st.success(f"✅ Successfully downloaded {new_size:.2f} MB model!")
-                
         except Exception as e:
             st.error(f"Failed to download Model: {e}")
             st.stop()
 
-    # --- BUILD & LOAD MODEL ---
-    base_model = tf.keras.applications.EfficientNetV2S(
+    # 3. Model Architecture (Reverted back to EfficientNetB0 standard!)
+    base_model = tf.keras.applications.EfficientNetB0(
         input_shape=(224, 224, 3), 
         include_top=False, 
         weights=None
@@ -141,10 +140,11 @@ def load_classification_model():
     inputs = tf.keras.Input(shape=(224, 224, 3))
     x = base_model(inputs, training=False)
     x = tf.keras.layers.GlobalAveragePooling2D()(x)
-    x = tf.keras.layers.Dropout(0.3)(x)
+    x = tf.keras.layers.Dropout(0.2)(x)
     outputs = tf.keras.layers.Dense(len(CLASS_NAMES), activation='softmax')(x) 
     m = tf.keras.Model(inputs, outputs)
     
+    # 4. Load weights into the B0 brain
     m.load_weights(model_path) 
     return m
 
@@ -156,7 +156,8 @@ with st.spinner("Initializing AI Pipeline..."):
     CLASS_NAMES, BIRD_SUMMARIES = load_database()
     classifier_model = load_classification_model()
     yolo_model = load_yolo_model()
-    
+
+
 # --- 5. LOGIC: YOLO GATEKEEPER & FAILSAFE ---
 def process_image(pil_image):
     open_cv_image = np.array(pil_image) 
@@ -188,8 +189,8 @@ def process_image(pil_image):
 
     target_img = cropped_img if bird_detected_by_yolo else pil_image
     
-    # Using 300x300 for EfficientNetV2S
-    img_resized = target_img.resize((300, 300))
+    # Image size matching EfficientNetB0
+    img_resized = target_img.resize((224, 224))
     img_array = tf.keras.preprocessing.image.img_to_array(img_resized)
     img_array = tf.expand_dims(img_array, 0)
     
@@ -282,9 +283,10 @@ with main_col:
                 """)
                 st.progress(confidence / 100)
                 
-                # Instantly pull the offline Wikipedia summary
-                offline_summary = BIRD_SUMMARIES.get(species_name, "Educational summary currently unavailable.")
-                st.info(f"📚 **Did you know?**\n\n{offline_summary}")
+                # Try to pull the offline Wikipedia summary if available
+                if BIRD_SUMMARIES:
+                    offline_summary = BIRD_SUMMARIES.get(species_name, "Educational summary currently unavailable.")
+                    st.info(f"📚 **Did you know?**\n\n{offline_summary}")
             else:
                 st.html(f"""
                 <div class="error-card">

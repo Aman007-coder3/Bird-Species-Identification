@@ -102,23 +102,37 @@ def load_database():
 def load_classification_model():
     model_path = 'bird_model_V2_final.keras'
     
-    # PASTE YOUR GITHUB RELEASE LINK HERE:
-    MODEL_URL = "https://github.com/Aman007-coder3/Bird-Species-Identification/releases/download/v1.0/bird_model_V2_final.keras"
+    # ⚠️ PASTE YOUR CORRECT GITHUB RELEASE LINK HERE:
+    MODEL_URL = "PASTE_YOUR_LINK_HERE"
     
-    # Failsafe: If the file exists but is corrupted/tiny, delete it
-    if os.path.exists(model_path) and os.path.getsize(model_path) < 1000000:
-        os.remove(model_path)
+    # --- THE AGGRESSIVE CLEANUP ---
+    # EfficientNet models are large. If the file is less than 20MB, it's a corrupted HTML page.
+    if os.path.exists(model_path):
+        size_in_mb = os.path.getsize(model_path) / (1024 * 1024)
+        if size_in_mb < 20.0:
+            print(f"Found corrupted file ({size_in_mb:.2f} MB). Deleting...")
+            os.remove(model_path)
     
-    # Download directly from GitHub Releases (No virus scan blockers!)
+    # --- THE DOWNLOADER ---
     if not os.path.exists(model_path):
-        st.info("⬇️ Downloading High-Resolution AI Model (This takes about 30 seconds)...")
+        st.info("⬇️ Downloading High-Resolution AI Model from GitHub (This takes about 30 seconds)...")
         try:
             urllib.request.urlretrieve(MODEL_URL, model_path)
+            
+            # Verify the download worked
+            new_size = os.path.getsize(model_path) / (1024 * 1024)
+            if new_size < 20.0:
+                st.error(f"❌ Download failed! The file is only {new_size:.2f} MB. You copied the wrong GitHub link.")
+                os.remove(model_path)
+                st.stop()
+            else:
+                st.success(f"✅ Successfully downloaded {new_size:.2f} MB model!")
+                
         except Exception as e:
             st.error(f"Failed to download Model: {e}")
             st.stop()
 
-    # Build the Model Architecture
+    # --- BUILD & LOAD MODEL ---
     base_model = tf.keras.applications.EfficientNetV2S(
         input_shape=(300, 300, 3), 
         include_top=False, 
@@ -131,7 +145,6 @@ def load_classification_model():
     outputs = tf.keras.layers.Dense(len(CLASS_NAMES), activation='softmax')(x) 
     m = tf.keras.Model(inputs, outputs)
     
-    # Load the weights into the architecture
     m.load_weights(model_path) 
     return m
 

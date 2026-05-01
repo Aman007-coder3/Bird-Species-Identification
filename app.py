@@ -87,7 +87,7 @@ with col_btn:
 
 @st.cache_data
 def load_database():
-    csv_path = 'bird_classes_index.csv'
+    csv_path = 'bird_master_database.csv'
     try:
         # Since the CSV is now directly in your GitHub repo, we just read it instantly!
         df = pd.read_csv(csv_path)
@@ -96,7 +96,7 @@ def load_database():
         return names_list, summary_dict
     except Exception as e:
         st.error(f"Could not load database: {e}")
-        return ["Unknown"] * 1751, {}
+        return ["Unknown"] * 2205, {}
 
 @st.cache_resource
 def load_classification_model():
@@ -134,11 +134,11 @@ def load_classification_model():
 
     # --- BUILD & LOAD MODEL ---
     base_model = tf.keras.applications.EfficientNetV2S(
-        input_shape=(300, 300, 3), 
+        input_shape=(224, 224, 3), 
         include_top=False, 
         weights=None
     )
-    inputs = tf.keras.Input(shape=(300, 300, 3))
+    inputs = tf.keras.Input(shape=(224, 224, 3))
     x = base_model(inputs, training=False)
     x = tf.keras.layers.GlobalAveragePooling2D()(x)
     x = tf.keras.layers.Dropout(0.3)(x)

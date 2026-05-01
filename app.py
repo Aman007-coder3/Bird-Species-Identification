@@ -112,15 +112,20 @@ def load_database():
 def load_classification_model():
     model_path = 'bird_model_V2_final.keras'
     
+    # Check if file exists. If it exists but is tiny (less than 1MB), it's a corrupted HTML file.
+    if os.path.exists(model_path) and os.path.getsize(model_path) < 1000000:
+        os.remove(model_path) # Delete the fake/corrupted file
+    
     if not os.path.exists(model_path):
-        st.info("⬇️ Downloading High-Resolution AI Model...")
-        url = f'https://drive.google.com/uc?id={MODEL_GDRIVE_ID}'
+        st.info("⬇️ Downloading High-Resolution AI Model (This might take a minute)...")
         try:
-            gdown.download(url, model_path, quiet=False)
+            # Using the 'id=' parameter directly tells gdown to actively bypass the virus scan warning
+            gdown.download(id=MODEL_GDRIVE_ID, output=model_path, quiet=False)
         except Exception as e:
             st.error(f"Failed to download Model: {e}")
             st.stop()
 
+    # Build the Model Architecture
     base_model = tf.keras.applications.EfficientNetV2S(
         input_shape=(300, 300, 3), 
         include_top=False, 
@@ -132,6 +137,8 @@ def load_classification_model():
     x = tf.keras.layers.Dropout(0.3)(x)
     outputs = tf.keras.layers.Dense(len(CLASS_NAMES), activation='softmax')(x) 
     m = tf.keras.Model(inputs, outputs)
+    
+    # Load the weights into the architecture
     m.load_weights(model_path) 
     return m
 

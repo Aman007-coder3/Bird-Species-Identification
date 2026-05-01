@@ -6,11 +6,8 @@ import numpy as np
 import pandas as pd
 import cv2
 import os
-import gdown
+import urllib.request
 
-# --- 0. YOUR GOOGLE DRIVE IDs ---
-MODEL_GDRIVE_ID = "11iEKDMD8ni2Vvr0X8GqogYXQrKKqXjy6"
-CSV_GDRIVE_ID = "14uCsKawYeM3g0_tHidQkwV30pGQWrHJS"
 
 # --- 1. PAGE CONFIGURATION ---
 st.set_page_config(
@@ -86,41 +83,37 @@ with col_btn:
     st.button("🌓 Toggle Theme", on_click=toggle_theme)
 
 
-# --- 4. DATA & MODEL LOADING (AUTO-DOWNLOADERS) ---
+# --- 4. DATA & MODEL LOADING ---
+
 @st.cache_data
 def load_database():
-    csv_path = 'bird_master_database.csv'
-    
-    if not os.path.exists(csv_path):
-        st.info("⬇️ Downloading Bird Encyclopedia Database...")
-        url = f'https://drive.google.com/uc?id={CSV_GDRIVE_ID}'
-        try:
-            gdown.download(url, csv_path, quiet=False)
-        except Exception as e:
-            st.error(f"Failed to download CSV: {e}")
-            return ["Unknown"] * 1751, {}
-            
+    csv_path = 'bird_classes_index.csv'
     try:
+        # Since the CSV is now directly in your GitHub repo, we just read it instantly!
         df = pd.read_csv(csv_path)
         names_list = df['Bird_Species'].tolist()
         summary_dict = dict(zip(df['Bird_Species'], df['Wiki_Summary']))
         return names_list, summary_dict
-    except Exception:
+    except Exception as e:
+        st.error(f"Could not load database: {e}")
         return ["Unknown"] * 1751, {}
 
 @st.cache_resource
 def load_classification_model():
     model_path = 'bird_model_V2_final.keras'
     
-    # Check if file exists. If it exists but is tiny (less than 1MB), it's a corrupted HTML file.
-    if os.path.exists(model_path) and os.path.getsize(model_path) < 1000000:
-        os.remove(model_path) # Delete the fake/corrupted file
+    # PASTE YOUR GITHUB RELEASE LINK HERE:
+    MODEL_URL = "https://github.com/Aman007-coder3/Bird-Species-Identification/releases/download/v1.0/bird_model_V2_final.keras"
     
+    # Failsafe: If the file exists but is corrupted/tiny, delete it
+    if os.path.exists(model_path) and os.path.getsize(model_path) < 1000000:
+        os.remove(model_path)
+    
+    # Download directly from GitHub Releases (No virus scan blockers!)
     if not os.path.exists(model_path):
-        st.info("⬇️ Downloading High-Resolution AI Model (This might take a minute)...")
+        st.info("⬇️ Downloading High-Resolution AI Model (This takes about 30 seconds)...")
         try:
-            # Using the 'id=' parameter directly tells gdown to actively bypass the virus scan warning
-            gdown.download(id=MODEL_GDRIVE_ID, output=model_path, quiet=False)
+            urllib.request.urlretrieve(MODEL_URL, model_path)
         except Exception as e:
             st.error(f"Failed to download Model: {e}")
             st.stop()
@@ -150,8 +143,7 @@ with st.spinner("Initializing AI Pipeline..."):
     CLASS_NAMES, BIRD_SUMMARIES = load_database()
     classifier_model = load_classification_model()
     yolo_model = load_yolo_model()
-
-
+    
 # --- 5. LOGIC: YOLO GATEKEEPER & FAILSAFE ---
 def process_image(pil_image):
     open_cv_image = np.array(pil_image) 

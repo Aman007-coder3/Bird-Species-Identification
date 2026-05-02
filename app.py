@@ -29,7 +29,6 @@ def toggle_theme():
         st.session_state.theme = 'dark'
 
 # --- 3. DYNAMIC CSS STYLING ---
-# --- 3. DYNAMIC CSS STYLING ---
 def inject_css():
     if st.session_state.theme == 'dark':
         bg_color = "#0b1121"
@@ -41,6 +40,7 @@ def inject_css():
         card_bg = "linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(0, 242, 254, 0.1) 100%)"
         border_color = "rgba(255, 255, 255, 0.08)"
         button_bg = "rgba(255, 255, 255, 0.05)"
+        uploader_bg = "rgba(255, 255, 255, 0.03)"  # Dark background for file uploader
     else:
         bg_color = "#f4f7f6"
         panel_bg = "#ffffff"
@@ -51,34 +51,37 @@ def inject_css():
         card_bg = "linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(56, 178, 172, 0.1) 100%)"
         border_color = "rgba(0, 0, 0, 0.08)"
         button_bg = "#ffffff"
+        uploader_bg = "#ffffff"  # Light background for file uploader
 
     st.html(f"""
     <style>
         /* Base Desktop Styles */
         #MainMenu, header, footer, [data-testid="stToolbar"], .stDeployButton, [data-testid="stSidebar"] {{ display: none !important; }}
-        .stApp {{ background-color: {bg_color}; min-height: 100vh; font-family: 'Inter', sans-serif; color: {text_main}; }}
+        .stApp {{ background-color: {bg_color}; min-height: 100vh; font-family: 'Inter', sans-serif; color: {text_main}; transition: background-color 0.3s ease; }}
         
-        /* 🔥 FIX: Streamlit Native Buttons (Theme Toggle) 🔥 */
+        /* Streamlit Native Buttons */
         [data-testid="stButton"] button {{ background-color: {button_bg} !important; color: {text_main} !important; border: 1px solid {border_color} !important; transition: all 0.3s ease; border-radius: 20px; }}
         [data-testid="stButton"] button:hover {{ border-color: {accent_blue} !important; color: {accent_blue} !important; }}
         
+        /* General Layout */
         [data-testid="stHorizontalBlock"] {{ gap: 2rem !important; padding: 2rem 4rem !important; align-items: stretch !important; }}
-        details.left-panel {{ background: {panel_bg}; border: 1px solid {border_color}; border-radius: 20px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); height: 100%; }}
+        details.left-panel {{ background: {panel_bg}; border: 1px solid {border_color}; border-radius: 20px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); height: 100%; transition: all 0.3s ease; }}
         .panel-logo {{ text-align: center; padding-bottom: 20px; border-bottom: 1px dashed {border_color}; }}
         .panel-logo-title {{ font-size: 20px; font-weight: 800; color: {accent_blue}; margin: 10px 0 0 0; }}
         .panel-logo-sub {{ font-size: 11px; color: {text_sub}; text-transform: uppercase; letter-spacing: 2px; margin-top: 5px; }}
         .section-label {{ font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; color: {accent_teal}; margin: 15px 0 8px 0; }}
         .tag {{ background: rgba(100, 255, 218, 0.1); border: 1px solid rgba(100, 255, 218, 0.3); color: {text_main}; padding: 6px 12px; border-radius: 20px; font-size: 12px; display: inline-flex; margin: 4px; }}
-        .main-content {{ background: {panel_bg}; border: 1px solid {border_color}; border-radius: 20px; padding: 40px; }}
+        .main-content {{ background: {panel_bg}; border: 1px solid {border_color}; border-radius: 20px; padding: 40px; transition: all 0.3s ease; }}
         .hero-title {{ font-size: 3rem; font-weight: 800; color: {text_main}; line-height: 1.2; margin: 0 0 16px; text-align: center; }}
         .hero-title span {{ color: {accent_blue}; }}
         .hero-sub {{ font-size: 1.1rem; color: {text_sub}; max-width: 500px; margin: 0 auto; text-align: center; }}
         
-        /* 🔥 FIX: File Uploader Backgrounds 🔥 */
-        [data-testid="stFileUploader"] > div {{ background: {panel_bg} !important; border: 2px dashed {accent_blue} !important; border-radius: 16px !important; padding: 30px !important; }}
-        [data-testid="stFileUploadDropzone"] {{ background-color: transparent !important; }}
-        [data-testid="stFileUploader"] label, [data-testid="stFileUploader"] p, [data-testid="stFileUploader"] span, [data-testid="stFileUploader"] small {{ color: {text_main} !important; }}
+        /* 🔥 DYNAMIC FILE UPLOADER FIX 🔥 */
+        [data-testid="stFileUploader"] > div {{ background-color: transparent !important; border: 2px dashed {accent_blue} !important; border-radius: 16px !important; padding: 30px !important; }}
+        [data-testid="stFileUploadDropzone"] {{ background-color: {uploader_bg} !important; transition: background-color 0.3s ease !important; }}
+        [data-testid="stFileUploader"] label, [data-testid="stFileUploader"] p, [data-testid="stFileUploader"] span, [data-testid="stFileUploader"] small, [data-testid="stFileUploadDropzone"] div {{ color: {text_main} !important; }}
         
+        /* Results Cards */
         .result-card {{ background: {card_bg}; border: 1px solid {accent_blue}; border-radius: 16px; padding: 30px; text-align: center; margin-top: 20px; }}
         .result-label {{ font-size: 12px; color: {accent_blue}; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; }}
         .result-text {{ font-size: 2rem; color: {text_main}; font-weight: 800; margin: 10px 0; }}
@@ -86,7 +89,7 @@ def inject_css():
         .error-card {{ background: rgba(255, 0, 0, 0.1); border: 1px solid rgba(255, 0, 0, 0.3); border-radius: 16px; padding: 30px; text-align: center; margin-top: 20px; }}
         .error-text {{ font-size: 1.5rem; color: #ff4b4b; font-weight: bold; }}
 
-        /* 🔥 MOBILE RESPONSIVE CSS 🔥 */
+        /* Mobile Responsive */
         @media screen and (max-width: 768px) {{
             [data-testid="stHorizontalBlock"] {{ padding: 1rem 1rem !important; gap: 1rem !important; }}
             .main-content {{ padding: 20px !important; border-radius: 15px !important; }}

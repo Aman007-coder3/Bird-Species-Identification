@@ -102,7 +102,6 @@ with col_btn:
 
 # --- 4. DATA & MODEL LOADING ---
 @st.cache_data
-@st.cache_data
 def load_database():
     # --- FILE 1: The Core Classes (Mandatory 2,205 rows) ---
     classes_path = 'bird_classes_index.csv' 
@@ -126,10 +125,6 @@ def load_database():
             
     return names_list, summary_dict
     
-    except Exception as e:
-        st.error(f"Could not load database: {e}")
-        # The ultimate failsafe: matches your EXACT training parameters
-        return ["Unknown"] * 2205, {}
 
 @st.cache_resource
 def load_classification_model():

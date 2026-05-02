@@ -312,7 +312,7 @@ with main_col:
                 """)
                 st.progress(confidence / 100)
                 
-             # Try to pull the offline Wikipedia summary if available
+          # Try to pull the offline Wikipedia summary if available
                 if BIRD_SUMMARIES:
                     offline_summary = BIRD_SUMMARIES.get(species_name)
                     
@@ -327,12 +327,7 @@ with main_col:
                             content = sections[i+1].strip()
                             parsed_data[title] = content
                         
-                        # 2. Display the Quick Fact permanently at the top
-                        if "Summary" in parsed_data:
-                            short_version = parsed_data["Summary"].split('.')[0] + '.'
-                            st.info(f"📚 **Quick Fact:** {short_version}")
-                        
-                        # 3. Render the separate toggle buttons
+                        # 2. Render the separate toggle buttons
                         st.markdown("### 📖 Species Encyclopedia")
                         
                         # Loop through the exact sections you want to create toggles for

@@ -102,6 +102,7 @@ with col_btn:
 
 # --- 4. DATA & MODEL LOADING ---
 @st.cache_data
+@st.cache_data
 def load_database():
     # --- FILE 1: The Core Classes (Mandatory 2,205 rows) ---
     classes_path = 'bird_classes_index.csv' 

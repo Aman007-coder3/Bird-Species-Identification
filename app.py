@@ -103,18 +103,29 @@ with col_btn:
 # --- 4. DATA & MODEL LOADING ---
 @st.cache_data
 def load_database():
-    csv_path = 'bird_master_database.csv' # Make sure this matches your GitHub exactly!
+    # --- FILE 1: The Core Classes (Mandatory 2,205 rows) ---
+    classes_path = 'bird_classes_index.csv' 
     try:
-        df = pd.read_csv(csv_path)
-        names_list = df['Bird_Species'].tolist()
-        
-        # Check if Wiki_Summary exists (if you ran the offline database script)
-        if 'Wiki_Summary' in df.columns:
-            summary_dict = dict(zip(df['Bird_Species'], df['Wiki_Summary']))
-        else:
-            summary_dict = {}
+        df_classes = pd.read_csv(classes_path)
+        names_list = df_classes['Bird_Species'].tolist()
+    except Exception as e:
+        st.error(f"❌ Core index missing: {e}")
+        # Ultimate Failsafe: 2,205 exact classes to prevent Keras from crashing
+        names_list = ["Unknown"] * 2205 
+
+    # --- FILE 2: The Optional Summaries (Dynamic rows) ---
+    summaries_path = 'bird_summaries.csv'
+    summary_dict = {}
+    
+    if os.path.exists(summaries_path):
+        try:
+            df_summaries = pd.read_csv(summaries_path)
+            # Link the exact bird name to its Wikipedia text
+            summary_dict = dict(zip(df_summaries['species_query'], df_summaries['text']))
+        except Exception as e:
+            st.warning(f"⚠️ Could not read summaries file: {e}")
             
-        return names_list, summary_dict
+    return names_list, summary_dict
     except Exception as e:
         st.error(f"Could not load database: {e}")
         # The ultimate failsafe: matches your EXACT training parameters
@@ -300,10 +311,15 @@ with main_col:
                 """)
                 st.progress(confidence / 100)
                 
-                # Try to pull the offline Wikipedia summary if available
+              # Try to pull the offline Wikipedia summary if available
                 if BIRD_SUMMARIES:
-                    offline_summary = BIRD_SUMMARIES.get(species_name, "Educational summary currently unavailable.")
-                    st.info(f"📚 **Did you know?**\n\n{offline_summary}")
+                    # Uses .get() to safely check if the bird exists in the second CSV
+                    offline_summary = BIRD_SUMMARIES.get(species_name)
+                    
+                    if offline_summary:
+                        st.info(f"📚 **Did you know?**\n\n{offline_summary}")
+                    else:
+                        pass
             else:
                 st.html(f"""
                 <div class="error-card">

@@ -40,7 +40,7 @@ def inject_css():
         card_bg = "linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(0, 242, 254, 0.1) 100%)"
         border_color = "rgba(255, 255, 255, 0.08)"
         button_bg = "rgba(255, 255, 255, 0.05)"
-        uploader_bg = "#111827"  # 🔥 Solid Dark Color for Uploader
+        uploader_bg = "#111827"  # Solid Dark Color for Uploader box
     else:
         bg_color = "#f4f7f6"
         panel_bg = "#ffffff"
@@ -51,7 +51,7 @@ def inject_css():
         card_bg = "linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(56, 178, 172, 0.1) 100%)"
         border_color = "rgba(0, 0, 0, 0.08)"
         button_bg = "#ffffff"
-        uploader_bg = "#ffffff"  # 🔥 Solid Light Color for Uploader
+        uploader_bg = "#ffffff"  # Solid Light Color for Uploader box
 
     st.markdown(f"""
     <style>
@@ -84,6 +84,11 @@ def inject_css():
         [data-testid="stFileUploader"] > div, 
         [data-testid="stFileUploadDropzone"] {{ background-color: transparent !important; border: none !important; }}
         
+        /* 🔥 FIX FOR THE UPLOADED FILE BADGE (The dark box in your image) 🔥 */
+        [data-testid="stUploadedFile"] {{ background-color: {panel_bg} !important; border: 1px solid {border_color} !important; border-radius: 10px !important; }}
+        [data-testid="stUploadedFile"] div, [data-testid="stUploadedFile"] span, [data-testid="stUploadedFile"] small {{ color: {text_main} !important; }}
+        [data-testid="stUploadedFile"] button svg {{ fill: {text_main} !important; }}
+
         /* Force text colors to update */
         [data-testid="stFileUploader"] label, 
         [data-testid="stFileUploader"] p, 
@@ -116,6 +121,7 @@ def inject_css():
         }}
     </style>
     """, unsafe_allow_html=True)
+
 inject_css()
 
 col_spacer, col_btn = st.columns([10, 1])

@@ -29,6 +29,7 @@ def toggle_theme():
         st.session_state.theme = 'dark'
 
 # --- 3. DYNAMIC CSS STYLING ---
+# --- 3. DYNAMIC CSS STYLING ---
 def inject_css():
     if st.session_state.theme == 'dark':
         bg_color = "#0b1121"
@@ -39,6 +40,7 @@ def inject_css():
         accent_teal = "#64ffda"
         card_bg = "linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(0, 242, 254, 0.1) 100%)"
         border_color = "rgba(255, 255, 255, 0.08)"
+        button_bg = "rgba(255, 255, 255, 0.05)"
     else:
         bg_color = "#f4f7f6"
         panel_bg = "#ffffff"
@@ -48,14 +50,18 @@ def inject_css():
         accent_teal = "#38b2ac"
         card_bg = "linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(56, 178, 172, 0.1) 100%)"
         border_color = "rgba(0, 0, 0, 0.08)"
+        button_bg = "#ffffff"
 
     st.html(f"""
     <style>
         /* Base Desktop Styles */
         #MainMenu, header, footer, [data-testid="stToolbar"], .stDeployButton, [data-testid="stSidebar"] {{ display: none !important; }}
         .stApp {{ background-color: {bg_color}; min-height: 100vh; font-family: 'Inter', sans-serif; color: {text_main}; }}
-        .theme-toggle-btn {{ position: absolute; top: 20px; right: 20px; z-index: 1000; background: {panel_bg}; border: 1px solid {border_color}; color: {text_main}; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; }}
-        .theme-toggle-btn:hover {{ border-color: {accent_blue}; }}
+        
+        /* 🔥 FIX: Streamlit Native Buttons (Theme Toggle) 🔥 */
+        [data-testid="stButton"] button {{ background-color: {button_bg} !important; color: {text_main} !important; border: 1px solid {border_color} !important; transition: all 0.3s ease; border-radius: 20px; }}
+        [data-testid="stButton"] button:hover {{ border-color: {accent_blue} !important; color: {accent_blue} !important; }}
+        
         [data-testid="stHorizontalBlock"] {{ gap: 2rem !important; padding: 2rem 4rem !important; align-items: stretch !important; }}
         details.left-panel {{ background: {panel_bg}; border: 1px solid {border_color}; border-radius: 20px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); height: 100%; }}
         .panel-logo {{ text-align: center; padding-bottom: 20px; border-bottom: 1px dashed {border_color}; }}
@@ -67,8 +73,12 @@ def inject_css():
         .hero-title {{ font-size: 3rem; font-weight: 800; color: {text_main}; line-height: 1.2; margin: 0 0 16px; text-align: center; }}
         .hero-title span {{ color: {accent_blue}; }}
         .hero-sub {{ font-size: 1.1rem; color: {text_sub}; max-width: 500px; margin: 0 auto; text-align: center; }}
+        
+        /* 🔥 FIX: File Uploader Backgrounds 🔥 */
         [data-testid="stFileUploader"] > div {{ background: {panel_bg} !important; border: 2px dashed {accent_blue} !important; border-radius: 16px !important; padding: 30px !important; }}
-        [data-testid="stFileUploader"] label, [data-testid="stFileUploader"] p {{ color: {text_main} !important; }}
+        [data-testid="stFileUploadDropzone"] {{ background-color: transparent !important; }}
+        [data-testid="stFileUploader"] label, [data-testid="stFileUploader"] p, [data-testid="stFileUploader"] span, [data-testid="stFileUploader"] small {{ color: {text_main} !important; }}
+        
         .result-card {{ background: {card_bg}; border: 1px solid {accent_blue}; border-radius: 16px; padding: 30px; text-align: center; margin-top: 20px; }}
         .result-label {{ font-size: 12px; color: {accent_blue}; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; }}
         .result-text {{ font-size: 2rem; color: {text_main}; font-weight: 800; margin: 10px 0; }}

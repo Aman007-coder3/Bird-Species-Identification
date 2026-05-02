@@ -40,7 +40,7 @@ def inject_css():
         card_bg = "linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(0, 242, 254, 0.1) 100%)"
         border_color = "rgba(255, 255, 255, 0.08)"
         button_bg = "rgba(255, 255, 255, 0.05)"
-        uploader_bg = "rgba(255, 255, 255, 0.03)"  # Dark background for file uploader
+        uploader_bg = "#111827"  # 🔥 Solid Dark Color for Uploader
     else:
         bg_color = "#f4f7f6"
         panel_bg = "#ffffff"
@@ -51,9 +51,9 @@ def inject_css():
         card_bg = "linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(56, 178, 172, 0.1) 100%)"
         border_color = "rgba(0, 0, 0, 0.08)"
         button_bg = "#ffffff"
-        uploader_bg = "#ffffff"  # Light background for file uploader
+        uploader_bg = "#ffffff"  # 🔥 Solid Light Color for Uploader
 
-    st.html(f"""
+    st.markdown(f"""
     <style>
         /* Base Desktop Styles */
         #MainMenu, header, footer, [data-testid="stToolbar"], .stDeployButton, [data-testid="stSidebar"] {{ display: none !important; }}
@@ -76,10 +76,19 @@ def inject_css():
         .hero-title span {{ color: {accent_blue}; }}
         .hero-sub {{ font-size: 1.1rem; color: {text_sub}; max-width: 500px; margin: 0 auto; text-align: center; }}
         
-        /* 🔥 DYNAMIC FILE UPLOADER FIX 🔥 */
-        [data-testid="stFileUploader"] > div {{ background-color: transparent !important; border: 2px dashed {accent_blue} !important; border-radius: 16px !important; padding: 30px !important; }}
-        [data-testid="stFileUploadDropzone"] {{ background-color: {uploader_bg} !important; transition: background-color 0.3s ease !important; }}
-        [data-testid="stFileUploader"] label, [data-testid="stFileUploader"] p, [data-testid="stFileUploader"] span, [data-testid="stFileUploader"] small, [data-testid="stFileUploadDropzone"] div {{ color: {text_main} !important; }}
+        /* 🔥 ABSOLUTE OVERRIDE FOR FILE UPLOADER 🔥 */
+        [data-testid="stFileUploader"] {{ background-color: {uploader_bg} !important; border: 2px dashed {accent_blue} !important; border-radius: 16px !important; padding: 10px !important; transition: background-color 0.3s ease !important; }}
+        
+        /* Make all internal layers completely invisible so the main color shows through */
+        [data-testid="stFileUploader"] > section, 
+        [data-testid="stFileUploader"] > div, 
+        [data-testid="stFileUploadDropzone"] {{ background-color: transparent !important; border: none !important; }}
+        
+        /* Force text colors to update */
+        [data-testid="stFileUploader"] label, 
+        [data-testid="stFileUploader"] p, 
+        [data-testid="stFileUploader"] span, 
+        [data-testid="stFileUploader"] small {{ color: {text_main} !important; }}
         
         /* Results Cards */
         .result-card {{ background: {card_bg}; border: 1px solid {accent_blue}; border-radius: 16px; padding: 30px; text-align: center; margin-top: 20px; }}
@@ -96,7 +105,7 @@ def inject_css():
             details.left-panel {{ padding: 20px !important; border-radius: 15px !important; }}
             .hero-title {{ font-size: 2rem !important; }}
             .hero-sub {{ font-size: 0.9rem !important; }}
-            [data-testid="stFileUploader"] > div {{ padding: 15px !important; }}
+            [data-testid="stFileUploader"] {{ padding: 5px !important; }}
             .result-card {{ padding: 20px !important; }}
             .result-text {{ font-size: 1.6rem !important; }}
         }}
@@ -106,8 +115,7 @@ def inject_css():
             .panel-logo-title {{ font-size: 18px !important; }}
         }}
     </style>
-    """)
-
+    """, unsafe_allow_html=True)
 inject_css()
 
 col_spacer, col_btn = st.columns([10, 1])

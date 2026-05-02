@@ -308,13 +308,22 @@ with main_col:
                 
               # Try to pull the offline Wikipedia summary if available
                 if BIRD_SUMMARIES:
-                    # Uses .get() to safely check if the bird exists in the second CSV
+                    # Safely check if the bird exists in the second CSV
                     offline_summary = BIRD_SUMMARIES.get(species_name)
                     
                     if offline_summary:
-                        st.info(f"📚 **Did you know?**\n\n{offline_summary}")
+                        # 1. Clean up the text and grab ONLY the first sentence for the short version
+                        clean_text = offline_summary.replace("--- Summary ---\n", "").strip()
+                        short_version = clean_text.split('.')[0] + '.'
+                        
+                        # 2. Display the very short version permanently
+                        st.info(f"📚 **Quick Fact:** {short_version}")
+                        
+                        # 3. Create the toggleable "Bigger Version"
+                        with st.expander("📖 Read Full Encyclopedia Entry"):
+                            st.markdown(offline_summary)
                     else:
-                        pass
+                        st.info("📚 **Educational Summary**\n\nDetailed habitat and behavioral data for this specific species is currently being updated in our database.")
             else:
                 st.html(f"""
                 <div class="error-card">

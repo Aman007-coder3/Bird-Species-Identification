@@ -110,7 +110,6 @@ def load_database():
         names_list = df_classes['Bird_Species'].tolist()
     except Exception as e:
         st.error(f"❌ Core index missing: {e}")
-        # Ultimate Failsafe: 2,205 exact classes to prevent Keras from crashing
         names_list = ["Unknown"] * 2205 
 
     # --- FILE 2: The Optional Summaries (Dynamic rows) ---
@@ -120,12 +119,12 @@ def load_database():
     if os.path.exists(summaries_path):
         try:
             df_summaries = pd.read_csv(summaries_path)
-            # Link the exact bird name to its Wikipedia text
             summary_dict = dict(zip(df_summaries['species_query'], df_summaries['text']))
         except Exception as e:
             st.warning(f"⚠️ Could not read summaries file: {e}")
             
     return names_list, summary_dict
+    
     except Exception as e:
         st.error(f"Could not load database: {e}")
         # The ultimate failsafe: matches your EXACT training parameters

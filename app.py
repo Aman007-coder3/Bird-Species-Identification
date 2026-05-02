@@ -7,6 +7,8 @@ import pandas as pd
 import cv2
 import os
 import urllib.request
+import time
+import re
 
 # --- 1. PAGE CONFIGURATION ---
 st.set_page_config(
@@ -139,20 +141,24 @@ def load_classification_model():
         if size_in_mb < 20.0:
             os.remove(model_path)
     
-    # 2. GitHub Release Downloader
+   # 2. GitHub Release Downloader
     if not os.path.exists(model_path):
-        st.info("⬇️ Downloading High-Resolution AI Model from GitHub (This takes about 30 seconds)...")
+        # Create an empty container that we can clear later
+        download_status = st.empty() 
+        download_status.info("⬇️ Downloading High-Resolution AI Model from GitHub (This takes about 30 seconds)...")
         try:
             urllib.request.urlretrieve(MODEL_URL, model_path)
             new_size = os.path.getsize(model_path) / (1024 * 1024)
             if new_size < 20.0:
-                st.error("❌ Download failed! The downloaded file is broken/too small.")
+                download_status.error("❌ Download failed! The downloaded file is broken/too small.")
                 os.remove(model_path)
                 st.stop()
             else:
-                st.success(f"✅ Successfully downloaded {new_size:.2f} MB model!")
+                download_status.success(f"✅ Successfully downloaded {new_size:.2f} MB model!")
+                time.sleep(4)            # Wait for 4 seconds so the user can read the success message
+                download_status.empty()  # CLEARS the container, hiding the messages completely!
         except Exception as e:
-            st.error(f"Failed to download Model: {e}")
+            download_status.error(f"Failed to download Model: {e}")
             st.stop()
 
     # 3. Model Architecture (Reverted back to EfficientNetB0 standard!)
@@ -258,10 +264,10 @@ with left_col:
                 <div class="panel-logo-sub">Major Project 2026</div>
                 <div class="tag" style="margin-top:10px; font-weight: bold;">Group-5</div>
             </div>
-            <p class="section-label">🎓 HOD CSE</p>
-            <div><span class="tag">👨‍🏫 Prof. Sanjai Kumar Gupta</span></div>
             <p class="section-label">🎓 Mentor</p>
             <div><span class="tag">👨‍🏫 Prof. Yash Pal Singh</span></div>
+            <p class="section-label">🎓 HOD CSE</p>
+            <div><span class="tag">👨‍🏫 Prof. Sanjai Kumar Gupta</span></div>
             <p class="section-label">👨‍💻 Developers</p>
             <div>
                 <span class="tag">Aman (2200430100007)</span>
@@ -306,22 +312,36 @@ with main_col:
                 """)
                 st.progress(confidence / 100)
                 
-              # Try to pull the offline Wikipedia summary if available
+             # Try to pull the offline Wikipedia summary if available
                 if BIRD_SUMMARIES:
-                    # Safely check if the bird exists in the second CSV
                     offline_summary = BIRD_SUMMARIES.get(species_name)
                     
                     if offline_summary:
-                        # 1. Clean up the text and grab ONLY the first sentence for the short version
-                        clean_text = offline_summary.replace("--- Summary ---\n", "").strip()
-                        short_version = clean_text.split('.')[0] + '.'
+                        # 1. Use Regex to split the text by the "--- Section Name ---" markers
+                        sections = re.split(r'---\s*(.*?)\s*---', offline_summary)
+                        parsed_data = {}
                         
-                        # 2. Display the very short version permanently
-                        st.info(f"📚 **Quick Fact:** {short_version}")
+                        # Pack the split text into a clean dictionary
+                        for i in range(1, len(sections), 2):
+                            title = sections[i].strip()
+                            content = sections[i+1].strip()
+                            parsed_data[title] = content
                         
-                        # 3. Create the toggleable "Bigger Version"
-                        with st.expander("📖 Read Full Encyclopedia Entry"):
-                            st.markdown(offline_summary)
+                        # 2. Display the Quick Fact permanently at the top
+                        if "Summary" in parsed_data:
+                            short_version = parsed_data["Summary"].split('.')[0] + '.'
+                            st.info(f"📚 **Quick Fact:** {short_version}")
+                        
+                        # 3. Render the separate toggle buttons
+                        st.markdown("### 📖 Species Encyclopedia")
+                        
+                        # Loop through the exact sections you want to create toggles for
+                        for section_name in ["Summary", "Description", "Behavior", "Taxonomy", "Distribution"]:
+                            # Only create a button if the bird actually has data for that section
+                            if section_name in parsed_data:
+                                with st.expander(f"🔍 {section_name}"):
+                                    st.write(parsed_data[section_name])
+                                    
                     else:
                         st.info("📚 **Educational Summary**\n\nDetailed habitat and behavioral data for this specific species is currently being updated in our database.")
             else:
